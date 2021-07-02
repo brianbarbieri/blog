@@ -2,6 +2,7 @@
 title: "Thanks for the useless stuff"
 date: 2022-09-04
 layout: post
+published: false
 ---
 
 Post about how real inflation is in usefull products and not useless. Housing & food > cars and electronics

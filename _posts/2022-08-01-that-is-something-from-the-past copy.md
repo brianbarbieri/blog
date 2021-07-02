@@ -2,6 +2,7 @@
 title: "That is something from the past right?"
 date: 2022-08-01
 layout: post
+published: false
 ---
 
 Start about how bad colonialism and the salve trade was
