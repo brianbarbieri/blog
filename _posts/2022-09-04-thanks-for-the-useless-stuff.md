@@ -1,6 +1,6 @@
 ---
 title: "Thanks for the useless stuff"
-date: 2021-04-04
+date: 2022-09-04
 layout: post
 ---
 
