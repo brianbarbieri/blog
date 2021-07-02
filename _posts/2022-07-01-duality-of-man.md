@@ -1,6 +1,6 @@
 ---
 title: "Duality of man"
-date: 2021-07-01
+date: 2022-07-01
 layout: post
 ---
 
