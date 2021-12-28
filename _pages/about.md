@@ -8,7 +8,7 @@ After a couple of green revolutions, the current agricultural system produces mo
 
 The agricultural system needs to get back into beign efficient, which does not mean the most production per hecatere, but the most productive for the least amount of resources. These agicultural techniques have already existed for a long time, but have recently be coined as permaculture. My view is that permaculture can not be done by the few, like the way food is produced in most of the western world at the moment. To solve our food production problems we need to get back into small scale farming, where farming is not only a business model to produce food but much more.
 
-In my blog I will go more in dept, where I will not only write about the theoretical parts of food systems, but I will also bring you along on my journey on starting my own farm. The farm, called Modero, means to slow down.
+In my blog I will go more in dept, where I will not only write about the theoretical parts of food systems, but I will also bring you along on my journey on starting my own farm. The farm, called Modero, which can be defined as slowing down.
 
 
 
