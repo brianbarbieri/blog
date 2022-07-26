@@ -3,40 +3,308 @@
   <head>
     <meta charset="utf-8">
     <title>Casa Modero - B&B located in Cartosio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <style>  
-        .fa {
-        padding: 20px;
-        font-size: 30px;
-        width: 50px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-        }
 
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        .fa-facebook {
-        background: #3B5998;
-        color: white;
-        } 
-
-        .fa-instagram {
-        background: #125688;
-        color: white;
-        }
     </style>  
   </head>
-  <body>
-    <h1>Casa Modero</h1>
-    <h2>Welcome to the home of Casa Modero, Bed and Breakfast opening in Cartosio.</h2>
-    <h2>We are happy to have you here in the future.</h2>
-    <h2>𝙊𝙛𝙛𝙞𝙘𝙞𝙖𝙡𝙡𝙮 𝙤𝙥𝙚𝙣𝙞𝙣𝙜 𝙤𝙣 𝙅𝙪𝙡𝙮 30th.</h2>
-    <h2>For updates, follow our socials:</h2>
+  <body class="w3-content w3-border-left w3-border-right">
+
+    <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
+    <div class="w3-container w3-display-container w3-padding-16">
+      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
+      <h1 class="logo">
+        <a href="#">Casa <span>Modero</span></a>
+      </h1>
+      
+      <hr class="hr-sidebar">
+    </div>
+    <div class="w3-bar-block">
+      <a id="dropdown-btn-rooms" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-house"></i> Rooms</a>
+      <div id="dropdown-container" style="display: none">
+        <a href="#room-olivo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>  Olivo</a>
+        <a href="#room-melazana" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Melanzana</a>
+        <a href="#room-cavolo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Cavolo</a>
+      </div>
+      </a>
+      <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a> -->
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-archway"></i> Surroundings</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+    <span class="w3-bar-item">Rental</span>
+    <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main w3-white" style="margin-left:260px">
+
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top:80px"></div>
+
+    <!-- Slideshow Header -->
+    <div class="w3-container" id="room-olivo">
+      <h2 class="w3-text-green">Olivo</h2>
+      <div class="w3-display-container mySlides1">
+      <img src="static\images\house\olivo\o1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides1">
+      <img src="static\images\house\olivo\o2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides1">
+      <img src="static\images\house\olivo\ob1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides1">
+      <img src="static\images\house\olivo\ob2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s3">
+        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\o1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(1, '1')" title="Bedroom 1">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\o2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2, '1')" title="Bedroom 2">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\ob1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3, '1')" title="Bathroom 1">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\ob2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4, '1')" title="Bathroom 2">
+      </div>
+    </div>
+
+    <div class="w3-container">
+     
+      <h4><strong>Amenities</strong></h4>
+      <div class="w3-row w3-large">
+        <div class="w3-col s6">
+          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
+          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
+          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
+          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
+          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-row w3-large">
+        <div class="w3-col s8">
+          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
+          <p style="font-size: 0.95em;display: inline;">From the 1st of March till the 30th of November</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h4><strong>Extra Info</strong></h4>
+      <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      
+      <h4><strong>Rules</strong></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    <hr>
+
+    <!-- Slideshow Header -->
+    <div class="w3-container" id="room-melazana">
+      <h2 class="w3-text-green">Melanzana</h2>
+      <div class="w3-display-container mySlides2">
+      <img src="static\images\house\melanzana\bm1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides2">
+      <img src="static\images\house\melanzana\bm2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides2">
+      <img src="static\images\house\melanzana\btm1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides2">
+      <img src="static\images\house\melanzana\btm2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s3">
+        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\bm1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(1, '2')" title="Living room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\bm2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2, '2')" title="Dining room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\btm1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3, '2')" title="Bedroom">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\btm2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4, '2')" title="Second Living Room">
+      </div>
+    </div>
+
+    <div class="w3-container">
+      
+      <h4><strong>Amenities</strong></h4>
+      <div class="w3-row w3-large">
+        <div class="w3-col s6">
+          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
+          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
+          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
+          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
+          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-row w3-large">
+        <div class="w3-col s8">
+          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
+          <p style="font-size: 0.95em;display: inline;">From the 1st of March till the 30th of November</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h4><strong>Extra Info</strong></h4>
+      <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      
+      <h4><strong>Rules</strong></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    <hr>
+
+    <!-- Slideshow Header -->
+    <div class="w3-container" id="room-cavolo">
+      <h2 class="w3-text-green">Cavolo</h2>
+      <div class="w3-display-container mySlides3">
+      <img src="static\images\house\olivo\o1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides3">
+      <img src="static\images\house\olivo\o2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bedroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides3">
+      <img src="static\images\house\olivo\ob1.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+      <div class="w3-display-container mySlides3">
+      <img src="static\images\house\olivo\ob2.jpeg" style="width:100%;margin-bottom:-6px">
+        <div class="w3-display-bottomleft w3-container w3-black">
+          <p>Bathroom</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col s3">
+        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\o1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(1, '3')" title="Living room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\o2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2, '3')" title="Dining room">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\ob1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3, '3')" title="Bedroom">
+      </div>
+      <div class="w3-col s3">
+        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\olivo\ob2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4, '3')" title="Second Living Room">
+      </div>
+    </div>
+
+    <div class="w3-container">
+      
+      <h4><strong>Amenities</strong></h4>
+      <div class="w3-row w3-large">
+        <div class="w3-col s6">
+          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
+          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
+          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
+          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
+          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-row w3-large">
+        <div class="w3-col s8">
+          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
+          <p style="font-size: 0.95em;display: inline;">From the 1st of March till the 30th of November</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+        </div>
+      </div>
+      <hr>
+      
+      <h4><strong>Extra Info</strong></h4>
+      <p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+      
+      <h4><strong>Rules</strong></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    <hr>
+    
+    <!-- Contact -->
+    <div class="w3-container" id="contact">
+      <h2>Contact</h2>
+      <i class="fa fa-map-marker" style="width:30px"></i> <a href="https://goo.gl/maps/BaavzN8od9PEhaZy9">Località chiazze 3, Cartosio</a><br>
+      <i class="fa fa-phone" style="width:30px"></i> Phone: +39 331 173 1906<br>
+      <i class="fa fa-envelope" style="width:30px"> </i> Email: modero.cartosio@gmail.com<br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3714552147471!2d8.426054229280671!3d44.57995075392469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2afbc8145a302a8!2zNDTCsDM0JzQ3LjgiTiA4wrAyNSczNS44IkU!5e1!3m2!1sen!2sit!4v1658751233118!5m2!1sen!2sit" width="600" height="450" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  <!-- End page content -->
+    
+
+
+
+    <!-- 
     <a href="https://www.instagram.com/casa.modero/" class="fa fa-instagram"> </a>  
-    <a href="https://www.facebook.com/Modero-104678462172960/" class="fa fa-facebook"> </a>   
+    <a href="https://www.facebook.com/Modero-104678462172960/" class="fa fa-facebook"> </a>    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="response.js"></script>
   </body>
 </html>
