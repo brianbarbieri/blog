@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-
-    <style>  
-
-    </style>  
+    <link rel="icon" href="static/images/logo.ico" type="image/x-icon">
+              
   </head>
   <body class="w3-content w3-border-left w3-border-right">
 
-    <!-- Sidebar/menu -->
+  <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
@@ -29,14 +27,13 @@
     </div>
     <div class="w3-bar-block">
       <a id="dropdown-btn-rooms" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-house"></i> Rooms</a>
-      <div id="dropdown-container" style="display: none">
-        <a href="#room-olivo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>  Olivo</a>
-        <a href="#room-melazana" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Melanzana</a>
-        <a href="#room-cavolo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Cavolo</a>
-      </div>
+        <div id="dropdown-container" style="display: none">
+          <a href="#room-olivo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>  Olivo</a>
+          <a href="#room-melazana" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Melanzana</a>
+          <a href="#room-cavolo" class="w3-bar-item w3-button w3-padding-10"><i class="fa fa-bed"></i>   Cavolo</a>
+        </div>
       </a>
-      <!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16" onclick="document.getElementById('subscribe').style.display='block'"><i class="fa fa-rss"></i> Subscribe</a> -->
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-archway"></i> Surroundings</a>
+      <a href="#surroundings" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-archway"></i> Surroundings</a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-envelope"></i> Contact</a>
     </div>
   </nav>
@@ -120,7 +117,7 @@
         <div class="w3-col s6">
           <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
           <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
-          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
+          <p><i class="fa fa-fw fa-bath"></i> Private adjacent bathroom</p>
           <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
           <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
           <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
@@ -159,7 +156,7 @@
         </div>
       </div>
       <div class="w3-display-container mySlides2">
-      <img src="static\images\house\melanzana\btm1.jpeg" style="width:100%;margin-bottom:-6px">
+      <img src="static\images\house\melanzana\btm1.jpg" style="width:100%;margin-bottom:-6px">
         <div class="w3-display-bottomleft w3-container w3-black">
           <p>Shower</p>
         </div>
@@ -179,7 +176,7 @@
         <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\bm2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2, '2')" title="Dining room">
       </div>
       <div class="w3-col s3">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\btm1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3, '2')" title="Bedroom">
+        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\btm1.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3, '2')" title="Bedroom">
       </div>
       <div class="w3-col s3">
         <img class="demo2 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\melanzana\btm2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4, '2')" title="Second Living Room">
@@ -266,7 +263,7 @@
         <div class="w3-col s6">
           <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
           <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
-          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
+          <p><i class="fa fa-fw fa-bath"></i> Private adjacent bathroom</p>
           <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
           <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
           <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
@@ -297,6 +294,8 @@
     <!-- surroundings -->
     <div class="w3-container" id="surroundings">
       <h2>Surroundings</h2>
+      <h4><strong>Acqui Terme</strong></h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus massa non ornare blandit. Donec egestas rutrum pretium. Curabitur consequat tincidunt elit, id pretium arcu dignissim hendrerit. Nunc faucibus, orci nec elementum sodales, velit purus varius tortor, nec iaculis quam urna sodales lorem. Morbi facilisis consectetur venenatis. Integer ac leo.</p>
       <h4><strong>Wineries</strong></h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rhoncus massa non ornare blandit. Donec egestas rutrum pretium. Curabitur consequat tincidunt elit, id pretium arcu dignissim hendrerit. Nunc faucibus, orci nec elementum sodales, velit purus varius tortor, nec iaculis quam urna sodales lorem. Morbi facilisis consectetur venenatis. Integer ac leo.</p>
       <h4><strong>Places to cool off</strong></h4>
@@ -311,7 +310,7 @@
       <h2>Contact</h2>
       <i class="fa fa-map-marker" style="width:30px"></i> <a href="https://goo.gl/maps/BaavzN8od9PEhaZy9">Località chiazze 3, Cartosio</a><br>
       <i class="fa fa-phone" style="width:30px"></i> Phone: +39 331 173 1906<br>
-      <i class="fa fa-envelope" style="width:30px"> </i> Email: modero.cartosio@gmail.com<br>
+      <i class="fa fa-envelope" style="width:30px; margin-bottom: 2em;"> </i> Email: modero.cartosio@gmail.com<br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3714552147471!2d8.426054229280671!3d44.57995075392469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2afbc8145a302a8!2zNDTCsDM0JzQ3LjgiTiA4wrAyNSczNS44IkU!5e1!3m2!1sen!2sit!4v1658751233118!5m2!1sen!2sit" width="600" height="450" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   <!-- End page content -->
