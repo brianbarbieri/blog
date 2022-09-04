@@ -8,7 +8,7 @@ function w3_open() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
   }
-   
+
 // Slideshow Images
 var slideIndex = 1;
 showDivs(slideIndex, "1");
@@ -46,3 +46,11 @@ $( "#dropdown-btn-rooms" ).click(function() {
         $( "#dropdown-container" ).css('display', "block")
     }
 });
+
+
+// change image in sidebar if hoovered over
+// $(".logo").hover(function(){
+//     $(this).attr("src", "static/images/logo_kleur.svg");
+//     }, function(){
+//     $(this).attr("src", "static/images/logo.png");
+// });
