@@ -35,6 +35,25 @@ function showDivs(n, slideNumber) {
     dots[slideIndex-1].className += " w3-opacity-off";
 }
 
+var headSlideIndex = 1;
+showHeadSlide(headSlideIndex);
+
+function plusSlide(n) {
+    showHeadSlide(headSlideIndex += n);
+}
+
+
+function showHeadSlide(n) {
+    var i;
+    var x = document.getElementsByClassName("headSlide");
+    if (n > x.length) {headSlideIndex = 1}
+    if (n < 1) {headSlideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    x[headSlideIndex-1].style.display = "block";  
+  }
+
 
 // Rooms dropdown butten add event listener
 $( "#dropdown-btn-rooms" ).click(function() {

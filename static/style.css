@@ -57,6 +57,10 @@ p {
     transition: .15s linear color;
 }
 
+.headSlide {
+    display:none;
+}
+
 a,
 a:hover,
 a:focus {
