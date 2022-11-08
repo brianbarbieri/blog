@@ -243,3 +243,8 @@ a.article:hover {
     max-height: 70%;
     object-fit: fill;
 }
+
+.image_show{
+    height: 420px;
+    width: 100%;
+}
