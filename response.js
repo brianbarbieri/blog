@@ -108,6 +108,5 @@ if (w.matches) {
   vid.pause();
   source.src = "static/images/videos/casa_modero.mp4";
   vid.load();
-  vid.play();
 }
 });
