@@ -73,3 +73,41 @@ $( "#dropdown-btn-rooms" ).click(function() {
 //     }, function(){
 //     $(this).attr("src", "static/images/logo.png");
 // });
+
+var w = window.matchMedia("(max-width: 700px)");
+var vid = document.getElementById("vid");
+var source = document.createElement("source");
+source.id = "hvid";
+source.setAttribute("type", "video/mp4");
+vid.appendChild(source);
+
+if (w.matches) {
+  vid.pause();
+  source.removeAttribute("src");
+  source.setAttribute("src", "static/images/videos/casa_modero_verticaal.mp4");
+  vid.load();
+//   vid.play();
+} else {
+  vid.pause();
+  source.removeAttribute("src");
+  source.setAttribute("src", "static/images/videos/casa_modero.mp4");
+  vid.load();
+//   vid.play();
+}
+
+window.addEventListener("resize", function(){
+var w = window.matchMedia("(max-width: 700px)");
+var vid = document.getElementById("vid");
+var source = document.getElementById("hvid");
+
+if (w.matches) {
+  vid.pause();
+  source.src = "static/images/videos/casa_modero_verticaal.mp4";
+  vid.load();
+} else {
+  vid.pause();
+  source.src = "static/images/videos/casa_modero.mp4";
+  vid.load();
+  vid.play();
+}
+});
