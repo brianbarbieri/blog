@@ -46,6 +46,20 @@ p {
     width:  100px;
     height: 100px;
     object-fit: cover;
+    cursor: pointer;
+}
+
+
+.w3-col.s2-o {
+    width: 14.2%;
+}
+
+.img-preview-olivo {
+    float: left;
+    width:  100%;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 
@@ -244,7 +258,23 @@ a.article:hover {
     object-fit: fill;
 }
 
+
+
 .image_show{
     height: 420px;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .image_show{
+        height: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .image_show{
+        height: 200px;
+        width: 100%;
+    }
 }
