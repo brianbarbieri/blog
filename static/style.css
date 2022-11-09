@@ -43,7 +43,7 @@ p {
 
 .img-preview {
     float: left;
-    width:  100px;
+    width:  100%;
     height: 100px;
     object-fit: cover;
     cursor: pointer;
@@ -54,10 +54,14 @@ p {
     width: 14.2%;
 }
 
+.w3-col.s2-2 {
+    width: 20%;
+}
+
 .img-preview-olivo {
     float: left;
     width:  100%;
-    height: 60px;
+    height: 75px;
     object-fit: cover;
     cursor: pointer;
 }
@@ -257,8 +261,6 @@ a.article:hover {
     max-height: 70%;
     object-fit: fill;
 }
-
-
 
 .image_show{
     height: 420px;
