@@ -2,12 +2,12 @@
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
-  }
-   
-  function w3_close() {
+}
+
+function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
-  }
+}
 
 // Slideshow Images
 var slideIndex = 1;
@@ -42,7 +42,6 @@ function plusSlide(n) {
     showHeadSlide(headSlideIndex += n);
 }
 
-
 function showHeadSlide(n) {
     var i;
     var x = document.getElementsByClassName("headSlide");
@@ -52,12 +51,10 @@ function showHeadSlide(n) {
        x[i].style.display = "none";  
     }
     x[headSlideIndex-1].style.display = "block";  
-  }
-
+}
 
 // Rooms dropdown butten add event listener
 $( "#dropdown-btn-rooms" ).click(function() {
-    console.log( "Handler for .click() called." );
     dropdown_blocked = $( "#dropdown-container" ).css('display');
     if (dropdown_blocked === "block"){
         $( "#dropdown-container" ).css('display', "none")
@@ -66,13 +63,12 @@ $( "#dropdown-btn-rooms" ).click(function() {
     }
 });
 
-
-// change image in sidebar if hoovered over
-// $(".logo").hover(function(){
-//     $(this).attr("src", "static/images/logo_kleur.svg");
-//     }, function(){
-//     $(this).attr("src", "static/images/logo.png");
-// });
+var elements = document.getElementsByClassName('clicked-side');
+for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', function() {
+        w3_close();
+    });
+};
 
 var w = window.matchMedia("(max-width: 700px)");
 var vid = document.getElementById("vid");
@@ -82,31 +78,29 @@ source.setAttribute("type", "video/mp4");
 vid.appendChild(source);
 
 if (w.matches) {
-  vid.pause();
-  source.removeAttribute("src");
-  source.setAttribute("src", "static/images/videos/casa_modero_verticaal.mp4");
-  vid.load();
-//   vid.play();
+    vid.pause();
+    source.removeAttribute("src");
+    source.setAttribute("src", "static/images/videos/casa_modero_verticaal.mp4");
+    vid.load();
 } else {
-  vid.pause();
-  source.removeAttribute("src");
-  source.setAttribute("src", "static/images/videos/casa_modero.mp4");
-  vid.load();
-//   vid.play();
+    vid.pause();
+    source.removeAttribute("src");
+    source.setAttribute("src", "static/images/videos/casa_modero.mp4");
+    vid.load();
 }
 
 window.addEventListener("resize", function(){
-var w = window.matchMedia("(max-width: 700px)");
-var vid = document.getElementById("vid");
-var source = document.getElementById("hvid");
+    var w = window.matchMedia("(max-width: 700px)");
+    var vid = document.getElementById("vid");
+    var source = document.getElementById("hvid");
 
-if (w.matches) {
-  vid.pause();
-  source.src = "static/images/videos/casa_modero_verticaal.mp4";
-  vid.load();
-} else {
-  vid.pause();
-  source.src = "static/images/videos/casa_modero.mp4";
-  vid.load();
-}
+    if (w.matches) {
+        vid.pause();
+        source.src = "static/images/videos/casa_modero_verticaal.mp4";
+        vid.load();
+    } else {
+        vid.pause();
+        source.src = "static/images/videos/casa_modero.mp4";
+        vid.load();
+    }
 });
