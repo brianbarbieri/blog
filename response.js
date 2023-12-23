@@ -104,3 +104,13 @@ window.addEventListener("resize", function(){
         vid.load();
     }
 });
+
+const phoneContact = document.getElementById("phoneContact");
+phoneContact.addEventListener("click", function() {
+    phoneContact.textContent = "+39 331 173 1906";
+});
+
+const emailContact = document.getElementById("emailContact");
+emailContact.addEventListener("click", function() {
+    emailContact.textContent = "modero.cartosio@gmail.com";
+});
