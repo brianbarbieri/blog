@@ -54,13 +54,9 @@ function showHeadSlide(n) {
 }
 
 // Rooms dropdown butten add event listener
-$( "#dropdown-btn-rooms" ).click(function() {
-    dropdown_blocked = $( "#dropdown-container" ).css('display');
-    if (dropdown_blocked === "block"){
-        $( "#dropdown-container" ).css('display', "none")
-    }else{
-        $( "#dropdown-container" ).css('display', "block")
-    }
+document.getElementById("dropdown-btn-rooms").addEventListener("click", () => {
+  const container = document.getElementById("dropdown-container");
+  container.style.display = (container.style.display === "block") ? "none" : "block";
 });
 
 var elements = document.getElementsByClassName('clicked-side');
@@ -107,7 +103,7 @@ window.addEventListener("resize", function(){
 
 const phoneContact = document.getElementById("phoneContact");
 phoneContact.addEventListener("click", function() {
-    phoneContact.textContent = "+39 331 " + "173 1906";
+    phoneContact.textContent = "+31 6 5" + second;
 });
 
 const emailContact = document.getElementById("emailContact");

@@ -31,10 +31,14 @@
           <a href="#room-cavolo" class="w3-bar-item w3-button w3-padding-10clicked-side"><i class="fa fa-bed"></i>   Cavolo</a>
         </div>
       </a>
-      <a href="https://www.booking.com/hotel/it/casa-modero.html" target="_blank" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-book"></i> Book your stay</a>
-      <a href="#garden" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-seedling"></i> Garden</a>      
-      <a href="#surroundings" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-archway"></i> Surroundings</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-envelope"></i> Contact</a>
+      <a href="https://www.booking.com/hotel/it/casa-modero.html" id="bookLink" target="_blank" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-book"></i> Book your stay</a>
+      <a href="#garden" id="gardenLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-seedling"></i> Garden</a>      
+      <a href="#surroundings" id="surroundingsLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-archway"></i> Surroundings</a>
+      <a href="#contact" id="contactLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-envelope"></i> Contact</a>
+    </div>
+
+    <div class="w3-container w3-padding-16" style="position: absolute; bottom: 20px; width: 100%; text-align:center;">
+      <img id="langBtn" src="https://flagcdn.com/24x18/gb.png" alt="English" style="cursor:pointer;">
     </div>
   </nav>
 
@@ -59,9 +63,9 @@
         
 
       <h1 class="w3-text-green center-text">"Benvenuto"</h1>
-      <h2 class="w3-text-green center-text">To the website of Casa Modero</h2>
+      <h2 id="welcomeText" class="w3-text-green center-text">To the website of Casa Modero</h2>
 
-      <p>Casa Modero is a three-bedroom Bed & Breakfast located in Cartosio. Based in the beautiful valley of the Erro, a place lodged between the best vineyards of Piedmont in the north and many regional nature parks at the coast in the south. Casa Modero is the ideal place to rest between activities such as trying out the local wines and dishes, going for a swim in the Erro, a day trip to the Ligurian coast or sightseeing the old sulfur springs in Acqui Terme.</p>
+      <p id="introText">Casa Modero is a three-bedroom Bed & Breakfast located in Cartosio. Based in the beautiful valley of the Erro, a place lodged between the best vineyards of Piedmont in the north and many regional nature parks at the coast in the south. Casa Modero is the ideal place to rest between activities such as trying out the local wines and dishes, going for a swim in the Erro, a day trip to the Ligurian coast or sightseeing the old sulfur springs in Acqui Terme.</p>
       
       <div class="w3-content w3-display-container">
 
@@ -140,10 +144,10 @@
 
       </div>
      
-      <h4><strong>Facilities</strong></h4>
-      <p>Casa Modero offers its accomodation with three bedrooms, each adorned with its private bathroom. The house has a shared living and dining room and multiple places to rest and eat outside of the house. For example the patio which can be shaded or the front of the house with its enchanting view over the valley. . Discover a perfect blend of private comfort and communal charm at Casa Modero.</p>
-      <h4><strong>Breakfast</strong></h4>
-      <p>Breakfast is included with the stay. Start your morning here with a choice of tea or coffee paired with fresh orange juice. Enjoy the freshly baked Farinata or bread with a variety of jams made from the fruits and berries sourced from our garden our garden. The breakfast served will be vegan/vegetarian.</p>
+      <h4><strong id="facilitiesTitle">Facilities</strong></h4>
+      <p id="facilitiesText">Casa Modero offers its accomodation with three bedrooms, each adorned with its private bathroom. The house has a shared living and dining room and multiple places to rest and eat outside of the house. For example the patio which can be shaded or the front of the house with its enchanting view over the valley. . Discover a perfect blend of private comfort and communal charm at Casa Modero.</p>
+      <h4><strong id="breakfastTitle">Breakfast</strong></h4>
+      <p id="breakfastText">Breakfast is included with the stay. Start your morning here with a choice of tea or coffee paired with fresh orange juice. Enjoy the freshly baked Farinata or bread with a variety of jams made from the fruits and berries sourced from our garden our garden.</p>
     
     </div>
     <hr>
@@ -154,43 +158,43 @@
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\1.jpeg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Bedroom</p>
+          <p class="bedroom">Bedroom</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\2.jpeg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Bedroom</p>
+          <p class="bedroom">Bedroom</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\3.jpg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Bedroom</p>
+          <p class="bedroom">Bedroom</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\4.jpg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Bedroom</p>
+          <p class="bedroom">Bedroom</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\5.jpg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Bedroom</p>
+          <p class="bedroom">Bedroom</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\6.jpeg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Toilet</p>
+          <p class="toilet">Toilet</p>
         </div>
       </div>
       <div class="w3-display-container mySlides1">
         <img src="static\images\house\olivo\7.jpeg" class="image_show">
         <div class="w3-display-bottomleft w3-container w3-black">
-          <p>Shower</p>
+          <p class="shower">Shower</p>
         </div>
       </div>
     </div>
@@ -220,31 +224,31 @@
 
     <div class="w3-container">
      
-      <h4><strong>Amenities</strong></h4>
+      <h4><strong class="amenities">Amenities</strong></h4>
       <div class="w3-row">
         <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
-          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
-          <p><i class="fa fa-fw fa-bath"></i> Private adjacent bathroom</p>
-          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
-          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
+          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
+          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
+          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
         </div>
       </div>
       <hr>
       <div class="w3-row">
         <div class="w3-col s8">
           <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of November</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+          <p class="availDates" style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of September</p>
+          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
         </div>
       </div>
       <hr>
       
       <h4><strong>Info</strong></h4>
-      <p>"Olivo" is the biggest room in the house with an adjacent private bathroom. The soft green tone of the room and the windows faced towards the forest will make you feel like you are immeresed in nature when spending the night in this room.</p>
+      <p id="olivoInfoText">"Olivo" is the biggest room in the house with an adjacent private bathroom. The soft green tone of the room and the windows faced towards the forest will make you feel like you are immeresed in nature when spending the night in this room.</p>
       
     <hr>
 
@@ -319,31 +323,31 @@
     </div>
     <div class="w3-container">
       
-      <h4><strong>Amenities</strong></h4>
+      <h4><strong class="amenities">Amenities</strong></h4>
       <div class="w3-row">
         <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
-          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
-          <p><i class="fa fa-fw fa-bath"></i> Private bathroom</p>
-          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
-          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
+          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private bathroom</span></p>
+          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
+          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
         </div>
       </div>
       <hr>
       <div class="w3-row">
         <div class="w3-col s8">
           <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of November</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+          <p class="availDates" style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of September</p>
+          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
         </div>
       </div>
       <hr>
       
       <h4><strong>Info</strong></h4>
-      <p>The room "Melanza" offers a more antique interior and has a private bathroom next to the room. Its colours make it ideal for a romantic getaway.</p>
+      <p id="melanzaInfoText">The room "Melanza" offers a more antique interior and has a private bathroom next to the room. Its colours make it ideal for a romantic getaway.</p>
     </div>
     <hr>
 
@@ -401,72 +405,69 @@
 
     <div class="w3-container">
       
-      <h4><strong>Amenities</strong></h4>
+      <h4><strong class="amenities">Amenities</strong></h4>
       <div class="w3-row">
         <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> Double bed</p>
-          <p><i class="fa fa-fw fa-cutlery"></i> Breakfast included</p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> Bed linen and towels included</p>
-          <p><i class="fa fa-fw fa-bath"></i> Private adjacent bathroom</p>
-          <p><i class="fa fa-fw fa-wifi"></i> WiFi</p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> Heating</p>
-          <p><i class="fa fa-fw fa-paw"></i> Pets allowed</p>
+          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
+          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
+          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
+          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
         </div>
       </div>
       <hr>
       <div class="w3-row">
         <div class="w3-col s8">
           <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of November</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+          <p class="availDates" style="font-size: 0.95em;display: inline;">From the 1st of April till the 30th of September</p>
+          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
         </div>
       </div>
       <hr>
       
       <h4><strong>Info</strong></h4>
-      <p>The last room that is avaliable to book is the room "Cavalo". Located in the older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day. </p>
+      <p id="cavaloInfoText">The last room that is avaliable to book is the room "Cavalo". Located in the older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day. </p>
     <hr>
 
     <div>
-      <h4><strong>Rules</strong></h4>
-      <p> - Our rooms are really clean and we like to keep it that way, so please keep all the outside and inside areas clean and tidy.</p>
-      <p> - Smoking is strictly forbidden inside of the house and outside on the property of the house.</p>
-      <p> - It is strictly forbidden to light fires, candles or incense inside the rooms or in the shared spaces of the house.</p>
-      <p> - It is only allowed to throw toilet paper in the toilet, for other objects a bin can be found in the bathroom. </p>
-      <p> - Between 23:30 pm and 08:00 am, all loud noises and any sort of disturbances are to be avoided. During the rest of the day, an adequate behavior should be kept as a form of respect to all of the guests. </p>
-      <p> - It is not allowed to organize parties or events in the facility without permission from the host. </p>
-      <p> - At the end of each stay, the room and the B&B main entrance keys have to be returned. If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.</p>
-      <p> - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for .</p>
+      <h4><strong id="rules1">Rules</strong></h4>
+      <p id="rules2"> - Our rooms are really clean and we like to keep it that way, so please keep all the outside and inside areas clean and tidy.</p>
+      <p id="rules3"> - Smoking is strictly forbidden inside of the house and outside on the property of the house.</p>
+      <p id="rules4"> - It is strictly forbidden to light fires, candles or incense inside the rooms or in the shared spaces of the house.</p>
+      <p id="rules5"> - It is only allowed to throw toilet paper in the toilet, for other objects a bin can be found in the bathroom. </p>
+      <p id="rules6"> - Between 23:30 pm and 08:00 am, all loud noises and any sort of disturbances are to be avoided. During the rest of the day, an adequate behavior should be kept as a form of respect to all of the guests. </p>
+      <p id="rules7"> - It is not allowed to organize parties or events in the facility without permission from the host. </p>
+      <p id="rules8"> - At the end of each stay, the room and the B&B main entrance keys have to be returned. If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.</p>
+      <p id="rules9"> - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for .</p>
     </div>
 
     <hr>
 
     <!-- surroundings -->
     <div class="w3-container" id="garden">
-      <h2>Garden</h2>
-      <p>Like has been said as much of the breakfast is served from produce from the garden. Below is a map of all the plant species that are found at Casa Modero.</p>
+      <h2 id="gardenTitle">Garden</h2>
+      <p id="gardenText">Much of the breakfast is served from produce from the garden. Below is a map of all the plant species that are found at Casa Modero.</p>
       <iframe src="https://www.protura.nl/map/shareiframe/cHJvdHVyYS5vZmZpY2lhbEBwcm90b25tYWlsLmNvbQ%3D%3D" width="100%" height="400"></iframe>
     </div>
     <hr>
 
-      
     <!-- surroundings -->
     <div class="w3-container" id="surroundings">
-      <h2>Surroundings</h2>
+      <h2 id="surroundTitle">Surroundings</h2>
       <h4><strong>Acqui Terme</strong></h4>
-      <p>As is in the name, this city is known for its natural thermal waters and spas. At piazza Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World Heritage Site.</p>
-      <h4><strong>Wineries</strong></h4>
-      <p>Close to Acqui Terme lies the Monferrato region that is known for its picturesque vineyards that produce wines of excellence quality. Here is is possible to learn how wine is produced, discover the perfect gastronomic combination of food and wine and take a tour of the vineyards and historical cellars.</p>
-      <h4><strong>Hiking</strong></h4>
-      <p>Casa Modero is surrounded by the beautiful hills, valleys and dense forests of <a href="https://en.wikipedia.org/wiki/Langhe">the Langhe area</a> making it a great place for many day hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.</p>
-      <h4><strong>Places to cool off</strong></h4>
-      <p>There are many places around Casa Modero to cool off on a hot day. Walking distance from the property lies the river <a href="https://en.wikipedia.org/wiki/Erro_(river)">the Erro</a> which stays cool all summer. If you rather swim in a swimming pool, we are located close to <a href="https://goo.gl/maps/dopuahB74Fz2kM2UA">the public swimming pool of Cartosio.</a> Liguerian coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the beach.</p>
+      <p id="acquiText">As is in the name, this city is known for its natural thermal waters and spas. At piazza Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World Heritage Site.</p>
+      <h4><strong id="wineriesTitle">Wineries</strong></h4>
+      <p id="wineriesText">Close to Acqui Terme lies the Monferrato region that is known for its picturesque vineyards that produce wines of excellence quality. Here is is possible to learn how wine is produced, discover the perfect gastronomic combination of food and wine and take a tour of the vineyards and historical cellars.</p>
+      <h4 id="hikingTitle"><strong>Hiking</strong></h4>
+      <p id="hikingText">Casa Modero is surrounded by the beautiful hills, valleys and dense forests of <a href="https://en.wikipedia.org/wiki/Langhe">the Langhe area</a> making it a great place for many day hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.</p>
+      <h4><strong id="coolPlacesTitle">Places to cool off</strong></h4>
+      <p id="coolPlacesText">There are many places around Casa Modero to cool off on a hot day. Walking distance from the property lies the river <a href="https://en.wikipedia.org/wiki/Erro_(river)">the Erro</a> which stays cool all summer. If you rather swim in a swimming pool, we are located close to <a href="https://goo.gl/maps/dopuahB74Fz2kM2UA">the public swimming pool of Cartosio.</a> Liguerian coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the beach.</p>
 
     </div>
     <hr>
-    
-
 
     <!-- Contact -->
     <div class="w3-container" id="contact">
@@ -474,16 +475,15 @@
       <i class="fab fa-instagram" style="width:30px"></i> <a href="https://www.instagram.com/casa.modero/"> Instagram</a><br> 
       <i class="fab fa-facebook-f" style="width:30px"></i> <a href="https://www.facebook.com/Modero-104678462172960/"> Facebook</a><br>   
       <i class="fa fa-map-marker" style="width:30px"></i> <a href="https://goo.gl/maps/BaavzN8od9PEhaZy9"> Località chiazze 3, Cartosio</a><br>
-      <i class="fa fa-phone" style="width:30px"></i> Phone number: <div style="display:inline-block" id="phoneContact">Click here to see number</div><br>
+      <i class="fa fa-phone" style="width:30px"></i> <span id="phoneLabel">Phone number:</span> <div style="display:inline-block" id="phoneContact">Click here to see number</div><br>
       <i class="fa fa-envelope" style="width:30px; margin-bottom: 2em;"> </i> Email: <div style="display:inline-block" id="emailContact">Click here to see email</div><br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3714552147471!2d8.426054229280671!3d44.57995075392469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2afbc8145a302a8!2zNDTCsDM0JzQ3LjgiTiA4wrAyNSczNS44IkU!5e1!3m2!1sen!2sit!4v1658751233118!5m2!1sen!2sit" width="100%" height="450" style="border:5;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   <!-- End page content -->
-    
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      const second = [9105200 - 17].join('');
+    </script>
     <script src="response.js"></script>
+    <script src="translate.js"></script>
   </body>
 </html>
