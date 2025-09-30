@@ -23,7 +23,7 @@ const translations = {
         amen5: "WiFi",
         amen6: "Heating",
         amen7: "Pets allowed",
-        availDates: "From the 1st of April till the 30th of september",
+        availDates: "From the 1st of May till the 30th of september",
         checkIn: "Check In: 15:00 - 24:00",
         checkOut: "Check Out: Before 10:00",
         olivoInfoText: "\"Olivo\" is the biggest room in the house with an adjacent private bathroom. The soft green tone of the room and the windows faced towards the forest will make you feel like you are immeresed in nature when spending the night in this room.",
@@ -39,7 +39,7 @@ const translations = {
         hikingText: "Casa Modero is surrounded by the beautiful hills, valleys and dense forests of the Langhe area making it a great place for many day hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.",
         coolPlacesTitle: "Places to cool off",
         coolPlacesText: "There are many places around Casa Modero to cool off on a hot day. Walking distance from the property lies the river the Erro which stays cool all summer. If you rather swim in a swimming pool, we are located close to the public swimming pool of Cartosio. Liguerian coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the beach.",
-        phoneLabel: "Phone number:",
+        phoneLabel: "Contact us on Whatsapp:",
         rules1: "Rules",
         rules2: " - Our rooms are really clean and we like to keep it that way, so please keep all the outside and inside areas clean and tidy.",
         rules3: " - Smoking is strictly forbidden inside of the house and outside on the property of the house.",
@@ -74,7 +74,7 @@ const translations = {
         amen5: "WiFi",
         amen6: "Verwarming",
         amen7: "Huisdieren toegestaan",
-        availDates: "Van 1 april tot 30 september",
+        availDates: "Van 1 mei tot 30 september",
         checkIn: "Inchecken: 15:00 - 24:00",
         checkOut: "Uitchecken: vóór 10:00",
         olivoInfoText: "\"Olivo\" is de grootste kamer in het huis met een aangrenzende privébadkamer. De zachte groentint van de kamer en de ramen gericht naar het bos laten je het gevoel geven dat je ’s nachts in de natuur bent ondergedompeld.",
@@ -90,7 +90,7 @@ const translations = {
         hikingText: "Casa Modero wordt omgeven door de prachtige heuvels, valleien en dichte bossen van het Langhe-gebied, wat het een geweldige plek maakt voor dagtochten. Voor de meer ervaren wandelaars is het E1 Europese langeafstandspad dichtbij en er zijn vele andere langeafstandsroutes in de regionale parken op de grens Piemonte/Ligurië.",
         coolPlacesTitle: "Plekken om af te koelen",
         coolPlacesText: "Er zijn veel plekken rond Casa Modero om af te koelen op een warme dag. Op loopafstand van het huis ligt de rivier de Erro, die de hele zomer koel blijft. Als u liever in een zwembad zwemt, bevinden we ons dicht bij het openbare zwembad van Cartosio. De Ligurische kust is ook slechts 50 minuten verwijderd, wat het de perfecte plek maakt voor een dagtocht naar het strand.",
-        phoneLabel: "Telefoonnummer:",
+        phoneLabel: "Bereikbaar op Whatsapp:",
         rules1: "Regels",
         rules2: " - Onze kamers zijn erg schoon en we houden het graag zo, dus houd al de buiten- en binnenruimtes schoon en netjes.",
         rules3: " - Roken is strikt verboden binnen het huis en buiten op het terrein van het huis.",
@@ -108,7 +108,7 @@ let currentLang = 'en';
 function updateLanguage() {
     // Sidebar & navigation
     document.getElementById('dropdown-btn-rooms').innerHTML = `<i class="fa fa-house"></i> ${translations[currentLang].rooms}`;
-    document.getElementById('bookLink').innerHTML = `<i class="fa fa-book"></i> ${translations[currentLang].book}`;
+    // document.getElementById('bookLink').innerHTML = `<i class="fa fa-book"></i> ${translations[currentLang].book}`;
     document.getElementById('gardenLink').innerHTML = `<i class="fa fa-seedling"></i> ${translations[currentLang].garden}`;
     document.getElementById('surroundingsLink').innerHTML = `<i class="fa fa-archway"></i> ${translations[currentLang].surroundings}`;
     document.getElementById('contactLink').innerHTML = `<i class="fa fa-envelope"></i> ${translations[currentLang].contact}`;
@@ -127,8 +127,9 @@ function updateLanguage() {
     document.querySelectorAll('.checkIn').forEach(el => el.innerText = translations[currentLang].checkIn);
     document.querySelectorAll('.checkOut').forEach(el => el.innerText = translations[currentLang].checkOut);
 
-    // document.getElementById('olivoInfoTitle').innerText = translations[currentLang].olivoInfoTitle;
-    // document.getElementById('olivoInfoText').innerText = translations[currentLang].olivoInfoText;
+    document.getElementById('olivoInfoText').innerText = translations[currentLang].olivoInfoText;
+    document.getElementById('melanzaInfoText').innerText = translations[currentLang].melanzaInfoText;
+    document.getElementById('cavaloInfoText').innerText = translations[currentLang].cavaloInfoText;
 
     document.getElementById('gardenTitle').innerText = translations[currentLang].gardenTitle;
     document.getElementById('gardenText').innerText = translations[currentLang].gardenText;
@@ -157,13 +158,13 @@ function updateLanguage() {
 
 document.getElementById('langBtn').addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'nl' : 'en';
-    // document.getElementById('langBtn').innerText = currentLang === 'en' ? 'Nederlands' : 'English';
+    console.log(currentLang);
     if (currentLang === 'nl') {
-      langBtn.src = 'https://flagcdn.com/24x18/nl.png'; // Dutch flag
-      langBtn.alt = 'Nederlands';
+        langBtn.src = 'https://flagcdn.com/h20/gb.webp'; // English flag
+        langBtn.alt = 'English';
     } else {
-      langBtn.src = 'https://flagcdn.com/24x18/gb.png'; // English flag
-      langBtn.alt = 'English';
+        langBtn.src = 'https://flagcdn.com/h20/nl.webp'; // Dutch flag
+        langBtn.alt = 'Nederlands';
     }
     updateLanguage();
 });
