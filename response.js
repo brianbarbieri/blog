@@ -9,7 +9,7 @@ function w3_close() {
     document.getElementById("myOverlay").style.display = "none";
 }
 
-// Slideshow Images
+// Slideshow Images for rooms
 var slideIndex = 1;
 showDivs(slideIndex, "1");
 showDivs(slideIndex, "2");
@@ -35,6 +35,7 @@ function showDivs(n, slideNumber) {
     dots[slideIndex-1].className += " w3-opacity-off";
 }
 
+// Main header slideshow with thumbnail support
 var headSlideIndex = 1;
 showHeadSlide(headSlideIndex);
 
@@ -42,18 +43,29 @@ function plusSlide(n) {
     showHeadSlide(headSlideIndex += n);
 }
 
+function currentHeadDiv(n) {
+    showHeadSlide(headSlideIndex = n);
+}
+
 function showHeadSlide(n) {
     var i;
     var x = document.getElementsByClassName("headSlide");
+    var dots = document.getElementsByClassName("demo0");
     if (n > x.length) {headSlideIndex = 1}
     if (n < 1) {headSlideIndex = x.length}
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
-    x[headSlideIndex-1].style.display = "block";  
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    }
+    x[headSlideIndex-1].style.display = "block";
+    if (dots.length > 0) {
+        dots[headSlideIndex-1].className += " w3-opacity-off";
+    }
 }
 
-// Rooms dropdown butten add event listener
+// Rooms dropdown button add event listener
 document.getElementById("dropdown-btn-rooms").addEventListener("click", () => {
   const container = document.getElementById("dropdown-container");
   container.style.display = (container.style.display === "block") ? "none" : "block";
