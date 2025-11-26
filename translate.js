@@ -48,7 +48,9 @@ const translations = {
         rules6: " - Between 23:30 pm and 08:00 am, all loud noises and any sort of disturbances are to be avoided. During the rest of the day, an adequate behavior should be kept as a form of respect to all of the guests.",
         rules7: " - It is not allowed to organize parties or events in the facility without permission from the host.",
         rules8: " - At the end of each stay, the room and the B&B main entrance keys have to be returned. If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.",
-        rules9: " - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for."  
+        rules9: " - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for.",
+        whoare: "Who are we",
+        whoaretext: "We are Loris and Silvia Barbieri, who are enthusiastically taking a new step by opening our Bed & Breakfast. With a focus on comfort, quality, and a personal approach, we warmly welcome our guests. For us, our B&B is a place where peace, hospitality, and attention to detail are central. We strive to offer every guest a pleasant and carefree stay. We look forward to welcoming you and making your stay as pleasant as possible."
     },
     nl: {
         rooms: "Kamers",
@@ -99,8 +101,10 @@ const translations = {
         rules6: " - Tussen 23:30 en 08:00 moeten graag geen geluidsoverlast. Gedurende de rest van de dag dient een adequate houding te worden behouden als vorm van respect voor alle gasten.",
         rules7: " - Het is niet toegestaan om feestjes of evenementen in de accommodatie te organiseren zonder toestemming van de gastheer.",
         rules8: " - Aan het einde van elk verblijf moeten de kamersleutels en de hoofdingangssleutel van de B&B worden teruggegeven. Bij verlies of misplaatsing wordt een boete van 50 euro per verloren sleutel in rekening gebracht.",
-        rules9: " - Eventuele schade aan het eigendom van de B&B en/of schade veroorzaakt door oneigenlijk gebruik van de aanwezige apparatuur, moet worden vergoed."
-    }
+        rules9: " - Eventuele schade aan het eigendom van de B&B en/of schade veroorzaakt door oneigenlijk gebruik van de aanwezige apparatuur, moet worden vergoed.",
+        whoare: "Wie zijn wij",
+        whoaretext: "Wij zijn Loris en Silvia Barbieri, die vol enthousiasme een nieuwe stap zetten door het openen van onze Bed & Breakfast. Met aandacht voor comfort, kwaliteit en een persoonlijke benadering heten wij onze gasten van harte welkom. Onze B&B is voor ons een plek waar rust, gastvrijheid en zorg voor detail centraal staan. Wij streven ernaar om iedere gast een aangenaam en zorgeloos verblijf te bieden. Wij kijken ernaar uit u te ontvangen en uw verblijf zo prettig mogelijk te maken."
+    },
 };
 
 let currentLang = 'en';
@@ -142,6 +146,9 @@ function updateLanguage() {
     document.getElementById('hikingText').innerText = translations[currentLang].hikingText;
     document.getElementById('coolPlacesTitle').innerText = translations[currentLang].coolPlacesTitle;
     document.getElementById('coolPlacesText').innerText = translations[currentLang].coolPlacesText;
+
+    document.getElementById('whoare').innerText = translations[currentLang].whoare;
+    document.getElementById('whoaretext').innerText = translations[currentLang].whoaretext;
 
     document.getElementById('phoneLabel').innerText = translations[currentLang].phoneLabel;
     document.querySelectorAll('.bedroom').forEach(el => el.innerText = translations[currentLang].bedroom);
