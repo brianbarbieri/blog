@@ -49,6 +49,7 @@ const translations = {
         rules7: " - It is not allowed to organize parties or events in the facility without permission from the host.",
         rules8: " - At the end of each stay, the room and the B&B main entrance keys have to be returned. If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.",
         rules9: " - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for.",
+        usLink: "Who are we",
         whoare: "Who are we",
         whoaretext: "We are Loris and Silvia Barbieri, who are enthusiastically taking a new step by opening our Bed & Breakfast. With a focus on comfort, quality, and a personal approach, we warmly welcome our guests. For us, our B&B is a place where peace, hospitality, and attention to detail are central. We strive to offer every guest a pleasant and carefree stay. We look forward to welcoming you and making your stay as pleasant as possible."
     },
@@ -102,6 +103,7 @@ const translations = {
         rules7: " - Het is niet toegestaan om feestjes of evenementen in de accommodatie te organiseren zonder toestemming van de gastheer.",
         rules8: " - Aan het einde van elk verblijf moeten de kamersleutels en de hoofdingangssleutel van de B&B worden teruggegeven. Bij verlies of misplaatsing wordt een boete van 50 euro per verloren sleutel in rekening gebracht.",
         rules9: " - Eventuele schade aan het eigendom van de B&B en/of schade veroorzaakt door oneigenlijk gebruik van de aanwezige apparatuur, moet worden vergoed.",
+        usLink: "Wie zijn wij",
         whoare: "Wie zijn wij",
         whoaretext: "Wij zijn Loris en Silvia Barbieri, die vol enthousiasme een nieuwe stap zetten door het openen van onze Bed & Breakfast. Met aandacht voor comfort, kwaliteit en een persoonlijke benadering heten wij onze gasten van harte welkom. Onze B&B is voor ons een plek waar rust, gastvrijheid en zorg voor detail centraal staan. Wij streven ernaar om iedere gast een aangenaam en zorgeloos verblijf te bieden. Wij kijken ernaar uit u te ontvangen en uw verblijf zo prettig mogelijk te maken."
     },
@@ -112,9 +114,10 @@ let currentLang = 'en';
 function updateLanguage() {
     // Sidebar & navigation
     document.getElementById('dropdown-btn-rooms').innerHTML = `<i class="fa fa-house"></i> ${translations[currentLang].rooms}`;
-    // document.getElementById('bookLink').innerHTML = `<i class="fa fa-book"></i> ${translations[currentLang].book}`;
+    document.getElementById('bookLink').innerHTML = `<i class="fa fa-book"></i> ${translations[currentLang].book}`;
     document.getElementById('gardenLink').innerHTML = `<i class="fa fa-seedling"></i> ${translations[currentLang].garden}`;
     document.getElementById('surroundingsLink').innerHTML = `<i class="fa fa-archway"></i> ${translations[currentLang].surroundings}`;
+    document.getElementById('usLink').innerHTML = `<i class="fa fa-user"></i> ${translations[currentLang].usLink}`;
     document.getElementById('contactLink').innerHTML = `<i class="fa fa-envelope"></i> ${translations[currentLang].contact}`;
 
     // Main content
