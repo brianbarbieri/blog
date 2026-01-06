@@ -1,8 +1,7 @@
 const translations = {
     en: {
         rooms: "Rooms",
-        book: "Book your stay",
-        garden: "Garden",
+        book: "Book your stay & pricing",
         surroundings: "Surroundings",
         contact: "Contact",
         welcomeText: "To the website of Casa Modero",
@@ -10,7 +9,7 @@ const translations = {
         facilitiesTitle: "Facilities",
         facilitiesText: "Casa Modero offers its accomodation with three bedrooms, each adorned with its private bathroom. The house has a shared living and dining room and multiple places to rest and eat outside of the house. For example the patio which can be shaded or the front of the house with its enchanting view over the valley. . Discover a perfect blend of private comfort and communal charm at Casa Modero.",
         breakfastTitle: "Breakfast",
-        breakfastText: "Breakfast is included with the stay. Start your morning here with a choice of tea or coffee paired with fresh orange juice. Enjoy the freshly baked Farinata or bread with a variety of jams made from the fruits and berries sourced from our garden our garden.",
+        breakfastText: "Breakfast is included with the stay. Start your morning here with a choice of tea or coffee paired with fresh orange juice. Enjoy the freshly baked Farinata or bread with a variety of jams made from the fruits and berries sourced from our garden.",
         olivoTitle: "Olivo",
         bedroom: "Bedroom",
         toilet: "Toilet",
@@ -29,8 +28,8 @@ const translations = {
         olivoInfoText: "\"Olivo\" is the biggest room in the house with an adjacent private bathroom. The soft green tone of the room and the windows faced towards the forest will make you feel like you are immeresed in nature when spending the night in this room.",
         melanzaInfoText: "The room \"Melanza\" offers a more antique interior and has a private bathroom next to the room. Its colors make it ideal for a romantic getaway.",
         cavaloInfoText: "The last room that is available to book is the room \"Cavalo\". Located in the older parts of the house, this room also has an adjacent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day.",
-        gardenTitle: "Garden",
-        gardenText: "Like has been said as much of the breakfast is served from produce from the garden. Below is a map of all the plant species that are found at Casa Modero.",
+        bookTitle: "Book your stay & Pricing",
+        bookText: 'Prices at Casa Modero vary between 60 and 80 euros and depend on the season and the number of nights. Please <a class="w3-text-green" href="#contact">contact us</a> for more information and to book your stay. We are also available on <a class="w3-text-green" href="https://www.booking.com/hotel/it/casa-modero.html">Booking.com</a>.',
         surroundTitle: "Surroundings",
         acquiText: "As is in the name, this city is known for its natural thermal waters and spas. At piazza Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World Heritage Site.",
         wineriesTitle: "Wineries",
@@ -55,8 +54,7 @@ const translations = {
     },
     nl: {
         rooms: "Kamers",
-        book: "Boek uw verblijf",
-        garden: "Tuin",
+        book: "Boek uw verblijf & Prijzen",
         surroundings: "Omgeving",
         contact: "Contact",
         welcomeText: "Welkom op de website van Casa Modero",
@@ -83,8 +81,8 @@ const translations = {
         olivoInfoText: "\"Olivo\" is de grootste kamer in het huis met een aangrenzende privébadkamer. De zachte groentint van de kamer en de ramen gericht naar het bos laten je het gevoel geven dat je ’s nachts in de natuur bent ondergedompeld.",
         melanzaInfoText: "De kamer \"Melanza\" heeft een meer antiek interieur en beschikt over een privébadkamer naast de kamer. De kleuren maken het ideaal voor een romantisch uitje.",
         cavaloInfoText: "The last room that is available to book is the room \"Cavalo\". Located in the older parts of the house, this room also has an adjacent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day.",
-        gardenTitle: "Tuin",
-        gardenText: "Zoals gezegd wordt een groot deel van het ontbijt geserveerd met producten uit de tuin. Hieronder is een kaart van alle plantensoorten die in Casa Modero te vinden zijn.",
+        bookTitle: "Boek uw verblijf & Prijzen",
+        bookText: 'De prijzen bij Casa Modero variëren tussen 60 en 80 euro en zijn afhankelijk van het seizoen en het aantal nachten. Neem alstublieft <a class="w3-text-green" href="#contact">contact met ons op</a> voor meer informatie en om uw verblijf te boeken. Wij zijn ook beschikbaar op <a class="w3-text-green" href="https://www.booking.com/hotel/it/casa-modero.html">Booking.com</a>.',
         surroundTitle: "Omgeving",
         acquiText: "Zoals de naam suggereert, staat deze stad bekend om haar natuurlijke thermale wateren en spa’s. Op het Piazza Bollente bevindt zich de bekendste thermale bron en dit is ook de perfecte plek om iets te eten of een Spritz te drinken. Met indrukwekkende ruïnes van het Romeinse aquaduct naast de Bormida rivier en vanwege de omliggende wijngaarden werd het landschap in 2014 uitgeroepen tot UNESCO-werelderfgoed.",
         wineriesTitle: "Wijngaarden",
@@ -114,8 +112,7 @@ let currentLang = 'en';
 function updateLanguage() {
     // Sidebar & navigation
     document.getElementById('dropdown-btn-rooms').innerHTML = `<i class="fa fa-house"></i> ${translations[currentLang].rooms}`;
-    document.getElementById('bookLink').innerHTML = `<i class="fa fa-book"></i> ${translations[currentLang].book}`;
-    document.getElementById('gardenLink').innerHTML = `<i class="fa fa-seedling"></i> ${translations[currentLang].garden}`;
+    document.getElementById('bookLink').innerHTML = `<i class="fa fa-seedling"></i> ${translations[currentLang].book}`;
     document.getElementById('surroundingsLink').innerHTML = `<i class="fa fa-archway"></i> ${translations[currentLang].surroundings}`;
     document.getElementById('usLink').innerHTML = `<i class="fa fa-user"></i> ${translations[currentLang].usLink}`;
     document.getElementById('contactLink').innerHTML = `<i class="fa fa-envelope"></i> ${translations[currentLang].contact}`;
@@ -138,8 +135,8 @@ function updateLanguage() {
     document.getElementById('melanzaInfoText').innerText = translations[currentLang].melanzaInfoText;
     document.getElementById('cavaloInfoText').innerText = translations[currentLang].cavaloInfoText;
 
-    document.getElementById('gardenTitle').innerText = translations[currentLang].gardenTitle;
-    document.getElementById('gardenText').innerText = translations[currentLang].gardenText;
+    document.getElementById('bookTitle').innerText = translations[currentLang].bookTitle;
+    document.getElementById('bookText').innerHTML = translations[currentLang].bookText;
 
     document.getElementById('surroundTitle').innerText = translations[currentLang].surroundTitle;
     document.getElementById('acquiText').innerText = translations[currentLang].acquiText;
