@@ -29,7 +29,8 @@ const translations = {
         melanzaInfoText: "The room \"Melanza\" offers a more antique interior and has a private bathroom next to the room. Its colors make it ideal for a romantic getaway.",
         cavaloInfoText: "The last room that is available to book is the room \"Cavalo\". Located in the older parts of the house, this room also has an adjacent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day.",
         bookTitle: "Book your stay & Pricing",
-        bookText: 'Prices at Casa Modero vary between 60 and 80 euros and depend on the season and the number of nights. Please <a class="w3-text-green" href="#contact">contact us</a> for more information and to book your stay. We are also available on <a class="w3-text-green" href="https://www.booking.com/hotel/it/casa-modero.html">Booking.com</a>.',
+        bookText: 'Prices at Casa Modero vary between 60 and 80 euros and depend on the season and the number of nights. Please <a class="w3-text-green" href="#contact">contact us</a> for more information and to book your stay.',
+        bookUrl: "https://www.bedandbreakfast.eu/en/ibook/v2/oaZvN3IE2tNt",
         surroundTitle: "Surroundings",
         acquiText: "As is in the name, this city is known for its natural thermal waters and spas. At piazza Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World Heritage Site.",
         wineriesTitle: "Wineries",
@@ -80,9 +81,10 @@ const translations = {
         checkOut: "Uitchecken: vóór 10:00",
         olivoInfoText: "\"Olivo\" is de grootste kamer in het huis met een aangrenzende privébadkamer. De zachte groentint van de kamer en de ramen gericht naar het bos laten je het gevoel geven dat je ’s nachts in de natuur bent ondergedompeld.",
         melanzaInfoText: "De kamer \"Melanza\" heeft een meer antiek interieur en beschikt over een privébadkamer naast de kamer. De kleuren maken het ideaal voor een romantisch uitje.",
-        cavaloInfoText: "The last room that is available to book is the room \"Cavalo\". Located in the older parts of the house, this room also has an adjacent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day.",
+        cavaloInfoText: "De laatste kamer die beschikbaar is om te boeken is de kamer \"Cavalo\". Gelegen in de oudere delen van het huis, heeft deze kamer ook een aangrenzende badkamer. De dikke buitenmuren van de kamer maken het de perfecte plek om in de zomer af te koelen na een vrolijke dag.",
         bookTitle: "Boek uw verblijf & Prijzen",
-        bookText: 'De prijzen bij Casa Modero variëren tussen 60 en 80 euro en zijn afhankelijk van het seizoen en het aantal nachten. Neem alstublieft <a class="w3-text-green" href="#contact">contact met ons op</a> voor meer informatie en om uw verblijf te boeken. Wij zijn ook beschikbaar op <a class="w3-text-green" href="https://www.booking.com/hotel/it/casa-modero.html">Booking.com</a>.',
+        bookText: 'De prijzen bij Casa Modero variëren tussen 60 en 80 euro en zijn afhankelijk van het seizoen en het aantal nachten. Neem alstublieft <a class="w3-text-green" href="#contact">contact met ons op</a> voor meer informatie en om uw verblijf te boeken.',
+        bookUrl: "https://www.bedandbreakfast.eu/ibook/v2/11869045/nl/yellow/transparent",
         surroundTitle: "Omgeving",
         acquiText: "Zoals de naam suggereert, staat deze stad bekend om haar natuurlijke thermale wateren en spa’s. Op het Piazza Bollente bevindt zich de bekendste thermale bron en dit is ook de perfecte plek om iets te eten of een Spritz te drinken. Met indrukwekkende ruïnes van het Romeinse aquaduct naast de Bormida rivier en vanwege de omliggende wijngaarden werd het landschap in 2014 uitgeroepen tot UNESCO-werelderfgoed.",
         wineriesTitle: "Wijngaarden",
@@ -137,6 +139,7 @@ function updateLanguage() {
 
     document.getElementById('bookTitle').innerText = translations[currentLang].bookTitle;
     document.getElementById('bookText').innerHTML = translations[currentLang].bookText;
+    document.getElementById('bookingFrame').src = translations[currentLang].bookUrl;
 
     document.getElementById('surroundTitle').innerText = translations[currentLang].surroundTitle;
     document.getElementById('acquiText').innerText = translations[currentLang].acquiText;
