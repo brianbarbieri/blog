@@ -39,6 +39,8 @@ const translations = {
         hikingText: "Casa Modero is surrounded by the beautiful hills, valleys and dense forests of the Langhe area making it a great place for many day hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.",
         coolPlacesTitle: "Places to cool off",
         coolPlacesText: "There are many places around Casa Modero to cool off on a hot day. Walking distance from the property lies the river the Erro which stays cool all summer. If you rather swim in a swimming pool, we are located close to the public swimming pool of Cartosio. Liguerian coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the beach.",
+        cyclingTitle: "Cycling",
+        cyclingText: 'The area around Casa Modero is also ideal for cycling enthusiasts. With its hilly terrain and scenic routes, it offers a great opportunity to explore the beautiful landscapes of the region. Whether you prefer road cycling or mountain biking, there are plenty of trails and routes to choose from.<a href="https://piemontecycling.com/en" style="color: #7386D5;" target="_blank"> In collaboration with Piedmonte Cycling we are offering different types of bikes for rent.</a>',
         phoneLabel: "Contact us on Whatsapp:",
         rules1: "Rules",
         rules2: " - Our rooms are really clean and we like to keep it that way, so please keep all the outside and inside areas clean and tidy.",
@@ -93,6 +95,8 @@ const translations = {
         hikingText: "Casa Modero wordt omgeven door de prachtige heuvels, valleien en dichte bossen van het Langhe-gebied, wat het een geweldige plek maakt voor dagtochten. Voor de meer ervaren wandelaars is het E1 Europese langeafstandspad dichtbij en er zijn vele andere langeafstandsroutes in de regionale parken op de grens Piemonte/Ligurië.",
         coolPlacesTitle: "Plekken om af te koelen",
         coolPlacesText: "Er zijn veel plekken rond Casa Modero om af te koelen op een warme dag. Op loopafstand van het huis ligt de rivier de Erro, die de hele zomer koel blijft. Als u liever in een zwembad zwemt, bevinden we ons dicht bij het openbare zwembad van Cartosio. De Ligurische kust is ook slechts 50 minuten verwijderd, wat het de perfecte plek maakt voor een dagtocht naar het strand.",
+        cyclingTitle: "Fietsen",
+        cyclingText: 'De omgeving rond Casa Modero is ook ideaal voor fietsliefhebbers. Met zijn heuvelachtige terrein en schilderachtige routes biedt het een geweldige kans om de prachtige landschappen van de regio te verkennen. Of je nu de voorkeur geeft aan wielrennen op de weg of mountainbiken, er zijn volop paden en routes om uit te kiezen.<a href="https://piemontecycling.com/en" style="color: #7386D5;" target="_blank"> In samenwerking met Piedmonte Cycling bieden wij verschillende soorten fietsen te huur aan.</a>',
         phoneLabel: "Bereikbaar op Whatsapp:",
         rules1: "Regels",
         rules2: " - Onze kamers zijn erg schoon en we houden het graag zo, dus houd al de buiten- en binnenruimtes schoon en netjes.",
@@ -149,6 +153,8 @@ function updateLanguage() {
     document.getElementById('hikingText').innerText = translations[currentLang].hikingText;
     document.getElementById('coolPlacesTitle').innerText = translations[currentLang].coolPlacesTitle;
     document.getElementById('coolPlacesText').innerText = translations[currentLang].coolPlacesText;
+    document.getElementById('cyclingTitle').innerText = translations[currentLang].cyclingTitle;
+    document.getElementById('cyclingText').innerHTML = translations[currentLang].cyclingText;
 
     document.getElementById('whoare').innerText = translations[currentLang].whoare;
     document.getElementById('whoaretext').innerText = translations[currentLang].whoaretext;
@@ -163,6 +169,12 @@ function updateLanguage() {
     }
     for (let i = 1; i <= 9; i++) {
         document.getElementById(`rules${i}`).innerText = translations[currentLang][`rules${i}`];
+    }
+
+    if (currentLang === 'nl') {
+        document.getElementById('onlyDutch').style.display = 'block';
+    } else {
+        document.getElementById('onlyDutch').style.display = 'none';
     }
 }
 
