@@ -280,3 +280,15 @@ a.article:hover {
         width: 100%;
     }
 }
+
+
+.image_show_us{
+    height: 420px;
+}
+
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
