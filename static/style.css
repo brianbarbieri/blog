@@ -287,7 +287,7 @@ h2.w3-text-green,
   color: #5a5450;
   margin-bottom: 0.5rem;
 }
-.w3-col.s6 p i {
+.w3-col.s6 p i, .fa-regular {
   color: var(--terracotta);
   width: 18px;
   text-align: center;
