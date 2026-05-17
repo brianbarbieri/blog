@@ -69,12 +69,20 @@
     </nav>
 
     <!-- Mobile top bar -->
-    <header class="w3-bar w3-top w3-hide-large w3-xlarge" style="background:#2a2620">
+    <header class="w3-bar w3-top w3-hide-large w3-xlarge"
+        style="background:#2a2620;display:flex;align-items:center;justify-content:space-between;">
+
         <span class="w3-bar-item"
-            style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;letter-spacing:0.05em;padding:0 1rem;">Casa
-            Modero</span>
-        <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"
-                style="font-size:1rem"></i></a>
+            style="font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:0.05em;padding:0 1rem;filter:brightness(0) invert(1);">
+            Casa Modero
+        </span>
+
+        <a href="javascript:void(0)"
+            class="w3-bar-item w3-button"
+            onclick="w3_open()">
+            <i class="fa fa-bars"
+                style="font-size:1rem;filter:brightness(0) invert(1);"></i>
+        </a>
     </header>
 
     <!-- Overlay -->
@@ -112,6 +120,37 @@
             <p id="breakfastText">Breakfast is included in your stay. Start your morning here with a choice of tea or
                 coffee combined with fresh orange juice. Enjoy a delicious breakfast with local products and produce
                 from our own garden.</p>
+
+            <hr>
+
+            <div class="w3-row">
+                <div class="w3-col s8">
+                    <h4><strong class="info-open">Info</strong></h4>
+                    <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">Open from the 1st of May
+                            till the 30th of September</span></p>
+                    <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+                    <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col s8">
+                    <h4><strong class="amenities">Amenities of each room</strong></h4>
+                    <div class="w3-row">
+                        <div class="w3-col s6">
+                            <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+                            <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+                            <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
+                                    included</span></p>
+                            <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
+                            <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+                            <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
+                            <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <hr>
@@ -119,38 +158,11 @@
         <!-- ── Room: Olivo ── -->
         <div class="w3-container" id="room-olivo">
             <h2 class="w3-text-green">Olivo</h2>
+            <p id="olivoInfoText">"Olivo" is the biggest room in the house with an adjacent private bathroom. The
+                soft green tone of the room and the windows faced towards the forest will make you feel like you are
+                immeresed in nature when spending the night in this room.</p>
 
             <div class="cm-gallery" data-section="olivo"></div>
-
-            <div class="w3-container">
-                <h4><strong class="amenities">Amenities</strong></h4>
-                <div class="w3-row">
-                    <div class="w3-col s6">
-                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
-                                included</span></p>
-                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
-                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
-                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="w3-row">
-                    <div class="w3-col s8">
-                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
-                                till the 30th of September</span></p>
-                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
-                    </div>
-                </div>
-                <hr>
-                <h4><strong>Info</strong></h4>
-                <p id="olivoInfoText">"Olivo" is the biggest room in the house with an adjacent private bathroom. The
-                    soft green tone of the room and the windows faced towards the forest will make you feel like you are
-                    immeresed in nature when spending the night in this room.</p>
-            </div>
         </div>
 
         <hr>
@@ -158,37 +170,10 @@
         <!-- ── Room: Melanzana ── -->
         <div class="w3-container" id="room-melazana">
             <h2 class="w3-text-green">Melanzana</h2>
+            <p id="melanzaInfoText">The room "Melanza" offers a more antique interior and has a private bathroom
+                next to the room. Its colours make it ideal for a romantic getaway.</p>
 
             <div class="cm-gallery" data-section="melanzana"></div>
-
-            <div class="w3-container">
-                <h4><strong class="amenities">Amenities</strong></h4>
-                <div class="w3-row">
-                    <div class="w3-col s6">
-                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
-                                included</span></p>
-                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private bathroom</span></p>
-                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
-                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="w3-row">
-                    <div class="w3-col s8">
-                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
-                                till the 30th of September</span></p>
-                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
-                    </div>
-                </div>
-                <hr>
-                <h4><strong>Info</strong></h4>
-                <p id="melanzaInfoText">The room "Melanza" offers a more antique interior and has a private bathroom
-                    next to the room. Its colours make it ideal for a romantic getaway.</p>
-            </div>
         </div>
 
         <hr>
@@ -196,38 +181,11 @@
         <!-- ── Room: Cavolo ── -->
         <div class="w3-container" id="room-cavolo">
             <h2 class="w3-text-green">Cavolo</h2>
+            <p id="cavaloInfoText">The last room that is avaliable to book is the room "Cavalo". Located in the
+                older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the
+                room make it the perfect place to cool down in summer after a joyful day.</p>
 
             <div class="cm-gallery" data-section="cavolo"></div>
-
-            <div class="w3-container">
-                <h4><strong class="amenities">Amenities</strong></h4>
-                <div class="w3-row">
-                    <div class="w3-col s6">
-                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
-                                included</span></p>
-                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
-                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
-                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
-                    </div>
-                </div>
-                <hr>
-                <div class="w3-row">
-                    <div class="w3-col s8">
-                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
-                                till the 30th of September</span></p>
-                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
-                    </div>
-                </div>
-                <hr>
-                <h4><strong>Info</strong></h4>
-                <p id="cavaloInfoText">The last room that is avaliable to book is the room "Cavalo". Located in the
-                    older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the
-                    room make it the perfect place to cool down in summer after a joyful day.</p>
-            </div>
         </div>
 
         <hr>
