@@ -79,6 +79,7 @@
 
   let lbImages = [];
   let lbIndex = 0;
+  let lbSection = '';
 
   const toThumb = (src) => src.replace(/(\.\w+)$/, '_small$1');
 
