@@ -1,580 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Casa Modero - Bed & Breakfast located in Cartosio</title>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Casa Modero is a three-bedroom Bed & Breakfast located in Cartosio, in the beautiful valley of the Erro, Piedmont, Italy.">
+    <title>Casa Modero - Bed &amp; Breakfast located in Cartosio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- W3.CSS (grid/utilities only) -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Our stylesheet -->
     <link rel="stylesheet" href="static/style.css">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="icon" href="static/images/logo.ico" type="image/x-icon">
-              
-  </head>
-  <body class="w3-content w3-border-left w3-border-right">
+</head>
 
-  <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-light-grey w3-collapse w3-top" style="z-index:3;width:260px" id="mySidebar">
-    <div class="w3-container w3-display-container w3-padding-16">
-      <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-transparent w3-display-topright"></i>
-      <a href="#"><img src="static/images/logo.png" width="50%" class="center" height="50%" alt="Casa Modero logo"></a>
-      <hr class="hr-sidebar">
-    </div>
-    <div class="w3-bar-block">
-      <a id="dropdown-btn-rooms" class="w3-bar-item w3-button w3-padding-16"><i class="fa fa-house"></i> Rooms</a>
-        <div id="dropdown-container" style="display: none">
-          <a href="#room-olivo" class="w3-bar-item w3-button w3-padding-10 clicked-side"><i class="fa fa-bed"></i>  Olivo</a>
-          <a href="#room-melazana" class="w3-bar-item w3-button w3-padding-10 clicked-side"><i class="fa fa-bed"></i>   Melanzana</a>
-          <a href="#room-cavolo" class="w3-bar-item w3-button w3-padding-10clicked-side"><i class="fa fa-bed"></i>   Cavolo</a>
-        </div>
-      </a>
-      <a href="#book" id="bookLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-book"></i> Book your stay & Pricing</a>      
-      <a href="#surroundings" id="surroundingsLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-archway"></i> Surroundings</a>
-      <a href="#us" id="usLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-user"></i> Who we are</a>
-      <a href="#contact" id="contactLink" class="w3-bar-item w3-button w3-padding-16 clicked-side"><i class="fa fa-envelope"></i> Contact</a>
-    </div>
+<body class="w3-content w3-border-left w3-border-right">
 
-    <div class="w3-container w3-padding-16" style="position: absolute; bottom: 20px; width: 100%; text-align:center;">
-      <img id="langBtn" src="https://flagcdn.com/h20/nl.webp" alt="Nederlands" style="cursor:pointer;width: 32px;">
-    </div>
-  </nav>
+    <!-- ══════════ SIDEBAR ══════════ -->
+    <nav class="w3-sidebar w3-collapse w3-top" style="z-index:3;width:270px" id="mySidebar">
 
-  <!-- Top menu on small screens -->
-  <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <span class="w3-bar-item">Casa Modero</span>
-    <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-  </header>
+        <div class="sidebar-logo-wrap">
+            <i onclick="w3_close()" class="fa fa-remove w3-hide-large"
+                style="position:absolute;top:1rem;right:1rem;cursor:pointer;font-size:1.1rem;color:rgba(255,255,255,0.5)"></i>
+            <a href="#"><img src="static/images/logo.png" alt="Casa Modero logo"
+                    style="width:55%;height:auto;filter:brightness(0) invert(1);opacity:.9;"></a>
+        </div>
 
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+        <div class="w3-bar-block">
+            <a id="dropdown-btn-rooms" class="w3-bar-item w3-button" style="cursor:pointer">
+                <i class="fa fa-house fa-fw"></i> Rooms
+            </a>
+            <div id="dropdown-container" style="display:none">
+                <a href="#room-olivo" class="w3-bar-item w3-button clicked-side"><i class="fa fa-bed fa-fw"></i>
+                    Olivo</a>
+                <a href="#room-melazana" class="w3-bar-item w3-button clicked-side"><i class="fa fa-bed fa-fw"></i>
+                    Melanzana</a>
+                <a href="#room-cavolo" class="w3-bar-item w3-button clicked-side"><i class="fa fa-bed fa-fw"></i>
+                    Cavolo</a>
+            </div>
+            <a href="#book" id="bookLink" class="w3-bar-item w3-button clicked-side"><i class="fa fa-book fa-fw"></i>
+                Book your stay &amp; Pricing</a>
+            <a href="#surroundings" id="surroundingsLink" class="w3-bar-item w3-button clicked-side"><i
+                    class="fa fa-archway fa-fw"></i> Surroundings</a>
+            <a href="#us" id="usLink" class="w3-bar-item w3-button clicked-side"><i class="fa fa-user fa-fw"></i> Who we
+                are</a>
+            <a href="#contact" id="contactLink" class="w3-bar-item w3-button clicked-side"><i
+                    class="fa fa-envelope fa-fw"></i> Contact</a>
+        </div>
 
-  <!-- !PAGE CONTENT! -->
-  <div class="w3-main w3-white" style="margin-left:260px">
+        <div id="langWrap" class="lang-wrap">
+            <img id="langBtn" src="https://flagcdn.com/h20/nl.webp" alt="Nederlands"
+                style="cursor:pointer;width:28px;border-radius:2px;">
+            <span id="langText" style="font-size:0.78rem;color:rgba(255,255,255,0.45);letter-spacing:0.05em;">NL</span>
+        </div>
+    </nav>
 
-    <!-- Push down content on small screens -->
-    <div class="w3-hide-large" style="margin-top:80px"></div>
+    <!-- Mobile top bar -->
+    <header class="w3-bar w3-top w3-hide-large w3-xlarge" style="background:#2a2620">
+        <span class="w3-bar-item"
+            style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;letter-spacing:0.05em;padding:0 1rem;">Casa
+            Modero</span>
+        <a href="javascript:void(0)" class="w3-right w3-bar-item w3-button" onclick="w3_open()"><i class="fa fa-bars"
+                style="font-size:1rem"></i></a>
+    </header>
 
-    <div class="w3-container" id="casa-modero">
-      
-      <video id="vid" class="fit-vid" controls  ></video>
-        
+    <!-- Overlay -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
 
-      <h1 class="w3-text-green center-text">"Benvenuto"</h1>
-      <h2 id="welcomeText" class="w3-text-green center-text">To the website of Casa Modero</h2>
+    <!-- ══════════ PAGE CONTENT ══════════ -->
+    <div class="w3-main w3-white" style="margin-left:270px">
 
-      <p id="introText">Casa Modero is a three-bedroom Bed & Breakfast located in Cartosio. Based in the beautiful valley of the Erro, a place lodged between the best vineyards of Piedmont in the north and many regional nature parks at the coast in the south. Casa Modero is the ideal place to rest between activities such as trying out the local wines and dishes, going for a swim in the Erro, a day trip to the Ligurian coast or sightseeing the old sulfur springs in Acqui Terme.</p>
-      
-      <div class="w3-content w3-display-container">
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\22.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\2.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\1.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\3.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\4_1.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\4_2.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\5.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\6.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\7.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\8.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\9.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\10_1.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\10_2.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\11.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\12.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\13.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\14.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\15.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\16.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\17.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\18.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\19.jpeg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\20.jpg" class="image_show">
-        </div>
-        <div class="w3-display-container headSlide">
-          <img loading="lazy" src="static\images\house\other\21.jpg" class="image_show">
-        </div>
-      </div>
+        <!-- Mobile spacer -->
+        <div class="w3-hide-large" style="margin-top:56px"></div>
 
-      <!-- Thumbnail navigation -->
-      <div class="w3-row-padding w3-section" style="margin:0 -8px">
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\22.jpeg" onclick="currentHeadDiv(1)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\2.jpg" onclick="currentHeadDiv(2)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\1.jpg" onclick="currentHeadDiv(3)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\3.jpg" onclick="currentHeadDiv(4)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\4_1.jpg" onclick="currentHeadDiv(5)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\4_2.jpg" onclick="currentHeadDiv(6)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\5.jpg" onclick="currentHeadDiv(7)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\6.jpg" onclick="currentHeadDiv(8)" style="cursor:pointer;width:100%">
-        </div>
-      </div>
-      <div class="w3-row-padding w3-section" style="margin:0 -8px">
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\7.jpeg" onclick="currentHeadDiv(9)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\8.jpeg" onclick="currentHeadDiv(10)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\9.jpg" onclick="currentHeadDiv(11)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\10_1.jpg" onclick="currentHeadDiv(12)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\10_2.jpg" onclick="currentHeadDiv(13)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\11.jpg" onclick="currentHeadDiv(14)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\12.jpg" onclick="currentHeadDiv(15)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\13.jpg" onclick="currentHeadDiv(16)" style="cursor:pointer;width:100%">
-        </div>
-      </div>
-      <div class="w3-row-padding w3-section" style="margin:0 -8px">
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\14.jpg" onclick="currentHeadDiv(17)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\15.jpg" onclick="currentHeadDiv(18)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\16.jpeg" onclick="currentHeadDiv(19)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\17.jpeg" onclick="currentHeadDiv(20)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\18.jpeg" onclick="currentHeadDiv(21)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\19.jpeg" onclick="currentHeadDiv(22)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\20.jpg" onclick="currentHeadDiv(23)" style="cursor:pointer;width:100%">
-        </div>
-        <div class="w3-col" style="width:12.5%">
-          <img class="demo0 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\other\21.jpg" onclick="currentHeadDiv(24)" style="cursor:pointer;width:100%">
-        </div>
-      </div>
+        <!-- ── Welcome ── -->
+        <div class="w3-container" id="casa-modero">
 
-      <h4><strong id="facilitiesTitle">Facilities</strong></h4>
-      <p id="facilitiesText">Casa Modero offers its accomodation with three bedrooms, each adorned with its private bathroom. The house has a shared living and dining room and multiple places to rest and eat outside of the house. For example the patio which can be shaded or the front of the house with its enchanting view over the valley. . Discover a perfect blend of private comfort and communal charm at Casa Modero.</p>
-      <h4><strong id="breakfastTitle">Breakfast</strong></h4>
-      <p id="breakfastText">Breakfast is included in your stay. Start your morning here with a choice of tea or coffee combined with fresh orange juice. Enjoy a delicious breakfast with local products and produce from our own garden.</p>
-    
-    </div>
-    <hr>
+            <video id="vid" class="fit-vid" controls></video>
 
-    <!-- Slideshow Header -->
-    <div class="w3-container" id="room-olivo">
-      <h2 class="w3-text-green">Olivo</h2>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\1.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\2.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\3.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\4.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\6.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="toilet">Toilet</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides1">
-        <img src="static\images\house\olivo\7.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="shower">Shower</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-section">
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\1.jpeg" onclick="currentDiv(1, '1')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\2.jpeg" onclick="currentDiv(2, '1')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\3.jpeg" onclick="currentDiv(3, '1')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\4.jpeg" onclick="currentDiv(4, '1')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\6.jpeg" onclick="currentDiv(6, '1')" title="Toilet">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo1 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\olivo\7.jpeg" onclick="currentDiv(7, '1')" title="Shower">
-      </div>
-    </div>
+            <h1 class="w3-text-green center-text">"Benvenuto"</h1>
+            <h2 id="welcomeText" class="w3-text-green center-text">To the website of Casa Modero</h2>
 
-    <div class="w3-container">
-     
-      <h4><strong class="amenities">Amenities</strong></h4>
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
-          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
-          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
-          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
-        </div>
-      </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col s8">
-          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p class="availDates" style="display: inline;">From the 1st of May till the 30th of September</p>
-          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
-        </div>
-      </div>
-      <hr>
-      
-      <h4><strong>Info</strong></h4>
-      <p id="olivoInfoText">"Olivo" is the biggest room in the house with an adjacent private bathroom. The soft green tone of the room and the windows faced towards the forest will make you feel like you are immeresed in nature when spending the night in this room.</p>
-      
-    <hr>
+            <p id="introText">Casa Modero is a three-bedroom Bed &amp; Breakfast located in Cartosio. Based in the
+                beautiful valley of the Erro, a place lodged between the best vineyards of Piedmont in the north and
+                many regional nature parks at the coast in the south. Casa Modero is the ideal place to rest between
+                activities such as trying out the local wines and dishes, going for a swim in the Erro, a day trip to
+                the Ligurian coast or sightseeing the old sulfur springs in Acqui Terme.</p>
 
-    <!-- Slideshow Header -->
-    <div class="w3-container" id="room-melazana">
-      <h2 class="w3-text-green">Melanzana</h2>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\1.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\2.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\3.jpg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\4.jpg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-          <img src="static\images\house\melanzana\5.jpg" class="image_show">
-          <div class="w3-display-bottomleft w3-container w3-black">
-            <p class="bedroom">Bedroom</p>
-          </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\6.jpg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="toilet">Toilet</p>
-        </div>
-      </div>
-      <div class="w3-display-container mySlides2">
-        <img src="static\images\house\melanzana\7.jpg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="shower">Shower</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-section">
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\1.jpeg" onclick="currentDiv(1, '2')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\2.jpeg" onclick="currentDiv(2, '2')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\3.jpg" onclick="currentDiv(3, '2')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\4.jpg" onclick="currentDiv(4, '2')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\5.jpg" onclick="currentDiv(5, '2')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\6.jpg" onclick="currentDiv(6, '2')" title="Shower">
-      </div>
-      <div class="w3-col s2-o">
-        <img class="demo2 w3-opacity w3-hover-opacity-off img-preview-olivo" src="static\images\house\melanzana\7.jpg" onclick="currentDiv(7, '2')" title="Toilet">
-      </div>
-    </div>
-    <div class="w3-container">
-      
-      <h4><strong class="amenities">Amenities</strong></h4>
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
-          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private bathroom</span></p>
-          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
-          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
-        </div>
-      </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col s8">
-          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p class="availDates" style="display: inline;">From the 1st of May till the 30th of September</p>
-          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
-        </div>
-      </div>
-      <hr>
-      
-      <h4><strong>Info</strong></h4>
-      <p id="melanzaInfoText">The room "Melanza" offers a more antique interior and has a private bathroom next to the room. Its colours make it ideal for a romantic getaway.</p>
-    </div>
-    <hr>
+            <div class="cm-gallery" data-section="property"></div>
 
-    <!-- Slideshow Header -->
-    <div class="w3-container" id="room-cavolo">
-      <h2 class="w3-text-green">Cavolo</h2>
-      <div class="w3-display-container mySlides3">
-        <img src="static\images\house\cavolo\1.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
+            <h4><strong id="facilitiesTitle">Facilities</strong></h4>
+            <p id="facilitiesText">Casa Modero offers its accomodation with three bedrooms, each adorned with its
+                private bathroom. The house has a shared living and dining room and multiple places to rest and eat
+                outside of the house. For example the patio which can be shaded or the front of the house with its
+                enchanting view over the valley. Discover a perfect blend of private comfort and communal charm at Casa
+                Modero.</p>
+            <h4><strong id="breakfastTitle">Breakfast</strong></h4>
+            <p id="breakfastText">Breakfast is included in your stay. Start your morning here with a choice of tea or
+                coffee combined with fresh orange juice. Enjoy a delicious breakfast with local products and produce
+                from our own garden.</p>
         </div>
-      </div>
-      <div class="w3-display-container mySlides3">
-        <img src="static\images\house\cavolo\2.jpg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="bedroom">Bedroom</p>
+
+        <hr>
+
+        <!-- ── Room: Olivo ── -->
+        <div class="w3-container" id="room-olivo">
+            <h2 class="w3-text-green">Olivo</h2>
+
+            <div class="cm-gallery" data-section="olivo"></div>
+
+            <div class="w3-container">
+                <h4><strong class="amenities">Amenities</strong></h4>
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
+                                included</span></p>
+                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
+                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
+                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="w3-row">
+                    <div class="w3-col s8">
+                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
+                                till the 30th of September</span></p>
+                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+                    </div>
+                </div>
+                <hr>
+                <h4><strong>Info</strong></h4>
+                <p id="olivoInfoText">"Olivo" is the biggest room in the house with an adjacent private bathroom. The
+                    soft green tone of the room and the windows faced towards the forest will make you feel like you are
+                    immeresed in nature when spending the night in this room.</p>
+            </div>
         </div>
-      </div>
-      <div class="w3-display-container mySlides3">
-        <img src="static\images\house\cavolo\3.jpeg" class="image_show">
-          <div class="w3-display-bottomleft w3-container w3-black">
-            <p class="bedroom">Bedroom</p>
-          </div>
+
+        <hr>
+
+        <!-- ── Room: Melanzana ── -->
+        <div class="w3-container" id="room-melazana">
+            <h2 class="w3-text-green">Melanzana</h2>
+
+            <div class="cm-gallery" data-section="melanzana"></div>
+
+            <div class="w3-container">
+                <h4><strong class="amenities">Amenities</strong></h4>
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
+                                included</span></p>
+                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private bathroom</span></p>
+                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
+                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="w3-row">
+                    <div class="w3-col s8">
+                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
+                                till the 30th of September</span></p>
+                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+                    </div>
+                </div>
+                <hr>
+                <h4><strong>Info</strong></h4>
+                <p id="melanzaInfoText">The room "Melanza" offers a more antique interior and has a private bathroom
+                    next to the room. Its colours make it ideal for a romantic getaway.</p>
+            </div>
         </div>
-      <div class="w3-display-container mySlides3">
-      <img src="static\images\house\cavolo\4.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="toilet">Toilet</p>
+
+        <hr>
+
+        <!-- ── Room: Cavolo ── -->
+        <div class="w3-container" id="room-cavolo">
+            <h2 class="w3-text-green">Cavolo</h2>
+
+            <div class="cm-gallery" data-section="cavolo"></div>
+
+            <div class="w3-container">
+                <h4><strong class="amenities">Amenities</strong></h4>
+                <div class="w3-row">
+                    <div class="w3-col s6">
+                        <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
+                        <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
+                        <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels
+                                included</span></p>
+                        <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
+                        <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
+                        <p><i class="fa fa-fw fa-thermometer-full"></i><span class="amen6">Heating</span></p>
+                        <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="w3-row">
+                    <div class="w3-col s8">
+                        <p><i class="fa fa-fw fa-regular fa-calendar"></i> <span class="availDates">From the 1st of May
+                                till the 30th of September</span></p>
+                        <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
+                        <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+                    </div>
+                </div>
+                <hr>
+                <h4><strong>Info</strong></h4>
+                <p id="cavaloInfoText">The last room that is avaliable to book is the room "Cavalo". Located in the
+                    older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the
+                    room make it the perfect place to cool down in summer after a joyful day.</p>
+            </div>
         </div>
-      </div>
-      <div class="w3-display-container mySlides3">
-      <img src="static\images\house\cavolo\5.jpeg" class="image_show">
-        <div class="w3-display-bottomleft w3-container w3-black">
-          <p class="shower">Shower</p>
+
+        <hr>
+
+        <!-- ── Book ── -->
+        <div class="w3-container" id="book">
+            <h2 id="bookTitle">Book your stay &amp; Pricing</h2>
+            <p id="bookText">Prices at Casa Modero are vary between 70 and 80 euros and depend on the season number of
+                nights and number of nights. Please <a class="w3-text-green" href="#contact">contact us</a> for more
+                information and to book your stay.</p>
+            <iframe id="bookingFrame" src="https://www.bedandbreakfast.eu/en/ibook/v2/oaZvN3IE2tNt" width="100%"
+                height="780" frameborder="0" allowtransparency="true"></iframe>
         </div>
-      </div>
-    </div>
-    <div class="w3-row-padding w3-section">
-      <div class="w3-col s2-2">
-        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\cavolo\1.jpeg" onclick="currentDiv(1, '3')" title="Living room">
-      </div>
-      <div class="w3-col s2-2">
-        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\cavolo\2.jpg" onclick="currentDiv(2, '3')" title="Dining room">
-      </div>
-      <div class="w3-col s2-2">
-        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\cavolo\3.jpeg" onclick="currentDiv(3, '3')" title="Bedroom">
-      </div>
-      <div class="w3-col s2-2">
-        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\cavolo\4.jpeg" onclick="currentDiv(4, '3')" title="Second Living Room">
-      </div>
-      <div class="w3-col s2-2">
-        <img class="demo3 w3-opacity w3-hover-opacity-off img-preview" src="static\images\house\cavolo\5.jpeg" onclick="currentDiv(4, '3')" title="Second Living Room">
-      </div>
-    </div>
 
-    <div class="w3-container">
-      <h4><strong class="amenities">Amenities</strong></h4>
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <p><i class="fa fa-fw fa-bed"></i> <span class="amen1">Double bed</span></p>
-          <p><i class="fa fa-fw fa-cutlery"></i> <span class="amen2">Breakfast included</span></p>
-          <p><i class="fa fa-fw fa-note-sticky"></i> <span class="amen3">Bed linen and towels included</span></p>
-          <p><i class="fa fa-fw fa-bath"></i> <span class="amen4">Private adjacent bathroom</span></p>
-          <p><i class="fa fa-fw fa-wifi"></i> <span class="amen5">WiFi</span></p>
-          <p><i class="fa fa-fw fa-thermometer-full"></i> <span class="amen6">Heating</span></p>
-          <p><i class="fa fa-fw fa-paw"></i> <span class="amen7">Pets allowed</span></p>
+        <hr>
+
+        <!-- ── Surroundings ── -->
+        <div class="w3-container" id="surroundings">
+            <h2 id="surroundTitle">Surroundings</h2>
+            <h4><strong>Acqui Terme</strong></h4>
+            <p id="acquiText">As is in the name, this city is known for its natural thermal waters and spas. At piazza
+                Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite
+                and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river
+                and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World
+                Heritage Site.</p>
+            <h4><strong id="wineriesTitle">Wineries</strong></h4>
+            <p id="wineriesText">Close to Acqui Terme lies the Monferrato region that is known for its picturesque
+                vineyards that produce wines of excellence quality. Here is is possible to learn how wine is produced,
+                discover the perfect gastronomic combination of food and wine and take a tour of the vineyards and
+                historical cellars.</p>
+            <h4><strong id="hikingTitle">Hiking</strong></h4>
+            <p id="hikingText">Casa Modero is surrounded by the beautiful hills, valleys and dense forests of <a
+                    href="https://en.wikipedia.org/wiki/Langhe">the Langhe area</a> making it a great place for many day
+                hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are
+                many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.</p>
+            <h4><strong id="coolPlacesTitle">Places to cool off</strong></h4>
+            <p id="coolPlacesText">There are many places around Casa Modero to cool off on a hot day. Walking distance
+                from the property lies the river <a href="https://en.wikipedia.org/wiki/Erro_(river)">the Erro</a> which
+                stays cool all summer. If you rather swim in a swimming pool, we are located close to <a
+                    href="https://goo.gl/maps/dopuahB74Fz2kM2UA">the public swimming pool of Cartosio.</a> Liguerian
+                coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the
+                beach.</p>
+            <h4><strong id="cyclingTitle">Cycling</strong></h4>
+            <p id="cyclingText">The area around Casa Modero is also ideal for cycling enthusiasts. With its hilly
+                terrain and scenic routes, it offers a great opportunity to explore the beautiful landscapes of the
+                region. Whether you prefer road cycling or mountain biking, there are plenty of trails and routes to
+                choose from.<a href="https://piemontecycling.com/en" style="color:#c17a5a" target="_blank"> In
+                    collaboration with Piedmonte Cycling we are offering different types of bikes for rent.</a></p>
+
+            <div id="onlyDutch">
+                <h4><strong id="goldTitle">Golf</strong></h4>
+                <p id="golfText">Wij werken ook samen met Piedmonte Golf, waarbij verschillende golfarrangementen
+                    beschikbaar zijn voor een golf-ervaring in de regio. <a href="https://www.piemontegolf.com/"
+                        style="color:#c17a5a" target="_blank">Kijk vooral op de website van Piedmonte Golf voor meer
+                        informatie over welke arrangementen beschikbaar zijn.</a></p>
+                <h4><strong id="taalTitle">Taalcursus</strong></h4>
+                <p id="taalText"><a href="https://villaduemondi.com/taalreis/" style="color:#c17a5a"
+                        target="_blank">Voor diegenen die geïnteresseerd zijn in het leren van de Italiaanse taal,
+                        bieden wij in samenwerking met Villa Due Mondi ook taalcursussen aan.</a> Deze cursussen zijn
+                    ontworpen om je te helpen de Italiaanse taal te leren en te verbeteren terwijl je kan genieten van
+                    een prachtige omgeving.</p>
+            </div>
         </div>
-      </div>
-      <hr>
-      <div class="w3-row">
-        <div class="w3-col s8">
-          <p style="display: inline;"><i class="fa fa-fw fa-regular fa-calendar"></i></p> 
-          <p class="availDates" style="display: inline;">From the 1st of May till the 30th of September</p>
-          <p class="checkIn"><i class="fa fa-fw fa-regular fa-clock"></i> Check In: 15:00 - 24:00</p>
-          <p class="checkOut"><i class="fa fa-fw fa-regular fa-clock"></i> Check Out: Before 10:00</p>
+
+        <hr>
+
+        <!-- ── Who we are ── -->
+        <div class="w3-container" id="us">
+            <h2 id="whoare">Who are we</h2>
+            <p id="whoaretext">We are Loris and Silvia Barbieri, who are enthusiastically taking a new step by opening
+                our Bed &amp; Breakfast. With a focus on comfort, quality, and a personal approach, we warmly welcome
+                our guests. For us, our B&amp;B is a place where peace, hospitality, and attention to detail are
+                central. We strive to offer every guest a pleasant and carefree stay. We look forward to welcoming you
+                and making your stay as pleasant as possible.</p>
+            <div class="image_container">
+                <img loading="lazy" src="static/images/us.jpeg" class="image_show_us" alt="Loris and Silvia Barbieri">
+            </div>
         </div>
-      </div>
-      <hr>
-      
-      <h4><strong>Info</strong></h4>
-      <p id="cavaloInfoText">The last room that is avaliable to book is the room "Cavalo". Located in the older parts of the house, this room has also an adjecent bathroom. The thick outside walls of the room make it the perfect place to cool down in summer after a joyful day. </p>
-    <hr>
 
-    <!-- surroundings -->
-    <div class="w3-container" id="book">
-      <h2 id="bookTitle">Book your stay & Pricing</h2>
-      <p id="bookText">Prices at Casa Modero are vary between 70 and 80 euros and depend on the season number of nights and number of nights. Please <a class="w3-text-green" href="#contact">contact us</a> for more information and to book your stay.</p>
-      <iframe 
-         id="bookingFrame" src="https://www.bedandbreakfast.eu/en/ibook/v2/oaZvN3IE2tNt" width="100%" height="780" frameborder="0" allowtransparency="true"
-      ></iframe>
-    </div>
-    <hr>
+        <hr>
 
-    <!-- surroundings -->
-    <div class="w3-container" id="surroundings">
-      <h2 id="surroundTitle">Surroundings</h2>
-      <h4><strong>Acqui Terme</strong></h4>
-      <p id="acquiText">As is in the name, this city is known for its natural thermal waters and spas. At piazza Bollente the most known thermal spring can be found and this is also the perfect place to grab a bite and drink a Spritz. With impressive ruins of the roman aqueduct still standing next to the Bormida river and being known for its surrounding vineyards, its landscapes were assigned in 2014 as a UNESCO World Heritage Site.</p>
-      <h4><strong id="wineriesTitle">Wineries</strong></h4>
-      <p id="wineriesText">Close to Acqui Terme lies the Monferrato region that is known for its picturesque vineyards that produce wines of excellence quality. Here is is possible to learn how wine is produced, discover the perfect gastronomic combination of food and wine and take a tour of the vineyards and historical cellars.</p>
-      <h4><strong id="hikingTitle">Hiking</strong></h4>
-      <p id="hikingText">Casa Modero is surrounded by the beautiful hills, valleys and dense forests of <a href="https://en.wikipedia.org/wiki/Langhe">the Langhe area</a> making it a great place for many day hikes. For the more experienced hikers, the E1 European long distance trail is close by and there are many other long distance trails located in the regional parks on the Piedmonte/Ligueria border.</p>
-      <h4><strong id="coolPlacesTitle">Places to cool off</strong></h4>
-      <p id="coolPlacesText">There are many places around Casa Modero to cool off on a hot day. Walking distance from the property lies the river <a href="https://en.wikipedia.org/wiki/Erro_(river)">the Erro</a> which stays cool all summer. If you rather swim in a swimming pool, we are located close to <a href="https://goo.gl/maps/dopuahB74Fz2kM2UA">the public swimming pool of Cartosio.</a> Liguerian coast is also just 50 minutes away from Casa Modero, making it the perfect place for a day trip to the beach.</p>
-      <h4><strong id="cyclingTitle">Cycling</strong></h4>
-      <p id="cyclingText">The area around Casa Modero is also ideal for cycling enthusiasts. With its hilly terrain and scenic routes, it offers a great opportunity to explore the beautiful landscapes of the region. Whether you prefer road cycling or mountain biking, there are plenty of trails and routes to choose from.<a href="https://piemontecycling.com/en" style="color: #7386D5;" target="_blank"> In collaboration with Piedmonte Cycling we are offering different types of bikes for rent.</a></p>
-      <div id="onlyDutch">
-        <h4><strong id="goldTitle">Golf</strong></h4>
-        <p id="golfText">Wij werken ook samen met Piedmonte Golf, waarbij verschillende golfarrangementen beschikbaar zijn voor een golf-ervaring in de regio. <a href="https://www.piemontegolf.com/" style="color: #7386D5;" target="_blank">Kijk vooral op de website van Piedmonte Golf voor meer informatie over welke arrangementen beschikbaar zijn.</a></p>
-        <h4><strong id="taalTitle">Taalcursus</strong></h4>
-        <p id="taalText"><a href="https://villaduemondi.com/taalreis/" style="color: #7386D5;" target="_blank">Voor diegenen die geïnteresseerd zijn in het leren van de Italiaanse taal, bieden wij in samenwerking met Villa Due Mondi ook taalcursussen aan.</a> Deze cursussen zijn ontworpen om je te helpen de Italiaanse taal te leren en te verbeteren terwijl je kan genieten van een prachtige omgeving.</p>
-      </div>
-    </div>
-    <hr>
+        <!-- ── Rules ── -->
+        <div class="w3-container">
+            <h4><strong id="rules1">Rules</strong></h4>
+            <p id="rules2"> - Our rooms are really clean and we like to keep it that way, so please keep all the outside
+                and inside areas clean and tidy.</p>
+            <p id="rules3"> - Smoking is strictly forbidden inside of the house and outside on the property of the
+                house.</p>
+            <p id="rules4"> - It is strictly forbidden to light fires, candles or incense inside the rooms or in the
+                shared spaces of the house.</p>
+            <p id="rules5"> - It is only allowed to throw toilet paper in the toilet, for other objects a bin can be
+                found in the bathroom.</p>
+            <p id="rules6"> - Between 23:30 pm and 08:00 am, all loud noises and any sort of disturbances are to be
+                avoided. During the rest of the day, an adequate behavior should be kept as a form of respect to all of
+                the guests.</p>
+            <p id="rules7"> - It is not allowed to organize parties or events in the facility without permission from
+                the host.</p>
+            <p id="rules8"> - At the end of each stay, the room and the B&amp;B main entrance keys have to be returned.
+                If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.</p>
+            <p id="rules9"> - Any damages caused to the B&amp;B's property and/or damages caused by improper use of the
+                furnished equipment, will have to be paid for.</p>
+        </div>
 
-    <!-- Us -->
-    <div class="w3-container" id="us">
-      <h2 id="whoare">Who are we</h2>
-      <p id="whoaretext">
-        We are Loris and Silvia Barbieri, who are enthusiastically taking a new step by opening our Bed & Breakfast. With a focus on comfort, quality, and a personal approach, we warmly welcome our guests. For us, our B&B is a place where peace, hospitality, and attention to detail are central. We strive to offer every guest a pleasant and carefree stay. We look forward to welcoming you and making your stay as pleasant as possible.
-      </p>
-      <div class="image_container w3-display-container">
-        <img loading="lazy" src="static\images\us.jpeg" class="image_show_us">
-      </div>
-    </div>
-    <hr>
+        <hr>
 
-    <div>
-      <h4><strong id="rules1">Rules</strong></h4>
-      <p id="rules2"> - Our rooms are really clean and we like to keep it that way, so please keep all the outside and inside areas clean and tidy.</p>
-      <p id="rules3"> - Smoking is strictly forbidden inside of the house and outside on the property of the house.</p>
-      <p id="rules4"> - It is strictly forbidden to light fires, candles or incense inside the rooms or in the shared spaces of the house.</p>
-      <p id="rules5"> - It is only allowed to throw toilet paper in the toilet, for other objects a bin can be found in the bathroom. </p>
-      <p id="rules6"> - Between 23:30 pm and 08:00 am, all loud noises and any sort of disturbances are to be avoided. During the rest of the day, an adequate behavior should be kept as a form of respect to all of the guests. </p>
-      <p id="rules7"> - It is not allowed to organize parties or events in the facility without permission from the host. </p>
-      <p id="rules8"> - At the end of each stay, the room and the B&B main entrance keys have to be returned. If lost or misplaced, a penalty fee of Euro 50,00 per lost key will be charged.</p>
-      <p id="rules9"> - Any damages caused to the B&B’s property and/or damages caused by improper use of the furnished equipment, will have to be paid for .</p>
-    </div>
-    <hr>
+        <!-- ── Contact ── -->
+        <div class="w3-container" id="contact">
+            <h2>Contact</h2>
+            <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/casa.modero/">Instagram</a></p>
+            <p><i class="fab fa-facebook-f"></i> <a href="https://www.facebook.com/Modero-104678462172960/">Facebook</a>
+            </p>
+            <p><i class="fa fa-map-marker"></i> <a href="https://goo.gl/maps/BaavzN8od9PEhaZy9">Località chiazze 3,
+                    Cartosio</a></p>
+            <p><i class="fa fa-info-circle"></i> <span>CIN: IT006036C1H3XDMF3J</span></p>
+            <p><i class="fa fa-info-circle"></i> <span>CIR: 00603600010</span></p>
+            <p><i class="fa fa-phone"></i> <span id="phoneLabel">Contact us on Whatsapp:</span>&nbsp;<span
+                    id="phoneContact" style="cursor:pointer;text-decoration:underline;color:#c17a5a">Click here to see
+                    number</span></p>
+            <p><i class="fa fa-envelope"></i> <span>Email:</span>&nbsp;<span id="emailContact"
+                    style="cursor:pointer;text-decoration:underline;color:#c17a5a">Click here to see email</span></p>
 
-    <!-- Contact -->
-    <div class="w3-container" id="contact">
-      <h2>Contact</h2>
-      <i class="fab fa-instagram" style="width:30px"></i> <a href="https://www.instagram.com/casa.modero/"> Instagram</a><br> 
-      <i class="fab fa-facebook-f" style="width:30px"></i> <a href="https://www.facebook.com/Modero-104678462172960/"> Facebook</a><br>   
-      <i class="fa fa-map-marker" style="width:30px"></i> <a href="https://goo.gl/maps/BaavzN8od9PEhaZy9"> Località chiazze 3, Cartosio</a><br>
-      <i class="fa fa-info-circle" style="width:30px"></i> CIN: IT006036C1H3XDMF3J<br>
-      <i class="fa fa-info-circle" style="width:30px"></i> CIR: 00603600010<br>
-      <i class="fa fa-phone" style="width:30px"></i> <span id="phoneLabel">Contact us on Whatsapp:</span> <div style="display:inline-block" id="phoneContact">Click here to see number</div><br>
-      <i class="fa fa-envelope" style="width:30px; margin-bottom: 2em;"> </i> Email: <div style="display:inline-block" id="emailContact">Click here to see email</div><br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3714552147471!2d8.426054229280671!3d44.57995075392469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2afbc8145a302a8!2zNDTCsDM0JzQ3LjgiTiA4wrAyNSczNS44IkU!5e1!3m2!1sen!2sit!4v1658751233118!5m2!1sen!2sit"
+                width="100%" height="420" style="border:none;border-radius:4px;margin-top:1.5rem;" allow="fullscreen"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1168.3714552147471!2d8.426054229280671!3d44.57995075392469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2afbc8145a302a8!2zNDTCsDM0JzQ3LjgiTiA4wrAyNSczNS44IkU!5e1!3m2!1sen!2sit!4v1658751233118!5m2!1sen!2sit" width="100%" height="450" style="border:5;" allow="fullscreen" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  <!-- End page content -->
+    </div><!-- /w3-main -->
+
     <script>
-      const second = [9105200 - 17].join('');
+        const second = [9105200 - 17].join('');
     </script>
-    <script src="response.js"></script>
-    <script src="translate.js"></script>
-  </body>
+    <script src="static/response.js"></script>
+    <script src="static/translate.js"></script>
+    <script src="static/gallery.js"></script>
+
+</body>
+
 </html>

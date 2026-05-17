@@ -61,7 +61,7 @@ const translations = {
         surroundings: "Omgeving",
         contact: "Contact",
         welcomeText: "Welkom op de website van Casa Modero",
-        introText: "Casa Modero is een sfeervolle Bed & Breakfast met drie kamers, gelegen in Cartosio. Vanaf 1 mei 2026 openen de nieuwe eigenaren, Loris en Silvia, de deuren van deze prachtige plek. In de schitterende vallei van de Erro, omringd door de beste wijngaarden van Piemonte in het noorden en diverse regionale natuurparken richting de kust in het zuiden, biedt Casa Modero de ideale uitvalsbasis voor rust en ontdekking. Gasten kunnen genieten van activiteiten zoals het proeven van lokale wijnen en gerechten, zwemmen in de Erro, een dagtrip naar de Ligurische kust of een bezoek aan de historische zwavelbronnen van Acqui Terme. Casa Modero staat klaar om een warm welkom te bieden aan iedereen die op zoek is naar ontspanning en authentieke Italiaanse charme.",
+        introText: "Casa Modero is een sfeervolle Bed & Breakfast met drie kamers, gelegen in Cartosio. Vanaf 1 mei 2026 opende de nieuwe eigenaren, Loris en Silvia, de deuren van deze prachtige plek. In de schitterende vallei van de Erro, omringd door de beste wijngaarden van Piemonte in het noorden en diverse regionale natuurparken richting de kust in het zuiden, biedt Casa Modero de ideale uitvalsbasis voor rust en ontdekking. Gasten kunnen genieten van activiteiten zoals het proeven van lokale wijnen en gerechten, zwemmen in de Erro, een dagtrip naar de Ligurische kust of een bezoek aan de historische zwavelbronnen van Acqui Terme. Casa Modero staat klaar om een warm welkom te bieden aan iedereen die op zoek is naar ontspanning en authentieke Italiaanse charme.",
         facilitiesTitle: "Faciliteiten",
         facilitiesText: "Casa Modero biedt accommodatie met drie slaapkamers, elk met een privébadkamer. Het huis heeft een gemeenschappelijke woon- en eetkamer en meerdere plekken om buiten te rusten en te eten. Bijvoorbeeld het terras dat beschut kan zijn of de voorkant van het huis met een betoverend uitzicht over de vallei. Ontdek een perfecte mix van privécomfort en gezamenlijke charme bij Casa Modero.",
         breakfastTitle: "Ontbijt",
@@ -178,15 +178,17 @@ function updateLanguage() {
     }
 }
 
-document.getElementById('langBtn').addEventListener('click', () => {
+document.getElementById('langWrap').addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'nl' : 'en';
-    console.log(currentLang);
+    const langText = document.getElementById('langText');
     if (currentLang === 'nl') {
         langBtn.src = 'https://flagcdn.com/h20/gb.webp'; // English flag
         langBtn.alt = 'English';
+        langText.innerText = 'EN';
     } else {
         langBtn.src = 'https://flagcdn.com/h20/nl.webp'; // Dutch flag
         langBtn.alt = 'Nederlands';
+        langText.innerText = 'NL';
     }
     updateLanguage();
 });
