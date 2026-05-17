@@ -77,11 +77,8 @@
             Casa Modero
         </span>
 
-        <a href="javascript:void(0)"
-            class="w3-bar-item w3-button"
-            onclick="w3_open()">
-            <i class="fa fa-bars"
-                style="font-size:1rem;filter:brightness(0) invert(1);"></i>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="w3_open()">
+            <i class="fa fa-bars" style="font-size:1rem;filter:brightness(0) invert(1);"></i>
         </a>
     </header>
 
@@ -170,7 +167,8 @@
         <!-- ── Room: Melanzana ── -->
         <div class="w3-container" id="room-melazana">
             <h2 class="w3-text-green">Melanzana</h2>
-            <p id="melanzaInfoText">The room "Melanza" offers a more antique interior with an adjacent private bathroom. Its colours make it ideal for a romantic getaway.</p>
+            <p id="melanzaInfoText">The room "Melanza" offers a more antique interior with an adjacent private bathroom.
+                Its colours make it ideal for a romantic getaway.</p>
 
             <div class="cm-gallery" data-section="melanzana"></div>
         </div>
@@ -320,7 +318,18 @@
     <script src="static/response.js"></script>
     <script src="static/translate.js"></script>
     <script src="static/gallery.js"></script>
+    <script>
+        function preloadFullImages() {
+            Object.values(SECTIONS).forEach(section => {
+                section.images.forEach(img => {
+                    const pre = new Image();
+                    pre.src = img.src; // full size
+                });
+            });
+        }
 
+        preloadFullImages();
+    </script>
 </body>
 
 </html>

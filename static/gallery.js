@@ -1,89 +1,89 @@
 (function () {
-  'use strict';
+    'use strict';
 
-  const SECTIONS = {
-    property: {
-      label: 'Property',
-      images: [
-        { src: 'static/images/house/other/0.jpeg', caption: '' },
-        { src: 'static/images/house/other/2.jpg',   caption: '' },
-        { src: 'static/images/house/other/1.jpg',   caption: '' },
-        { src: 'static/images/house/other/3.jpg',   caption: '' },
-        { src: 'static/images/house/other/4.jpg', caption: '' },
-        { src: 'static/images/house/other/4_2.jpg', caption: '' },
-        { src: 'static/images/house/other/4_3.jpg', caption: '' },
-        { src: 'static/images/house/other/4_4.jpg', caption: '' },
-        { src: 'static/images/house/other/4_5.jpg', caption: '' },
-        { src: 'static/images/house/other/4_6.jpg', caption: '' },
-        { src: 'static/images/house/other/4_7.jpg', caption: '' },
-        { src: 'static/images/house/other/5.jpg',   caption: '' },
-        { src: 'static/images/house/other/6.jpg',   caption: '' },
-        { src: 'static/images/house/other/7.jpg',  caption: '' },
-        { src: 'static/images/house/other/8.jpg',  caption: '' },
-        { src: 'static/images/house/other/9.jpg',   caption: '' },
-        { src: 'static/images/house/other/10_1.jpg',caption: '' },
-        { src: 'static/images/house/other/10_2.jpg',caption: '' },
-        { src: 'static/images/house/other/11.jpg',  caption: '' },
-        { src: 'static/images/house/other/12.jpg',  caption: '' },
-        { src: 'static/images/house/other/13.jpg',  caption: '' },
-        { src: 'static/images/house/other/14.jpg',  caption: '' },
-        { src: 'static/images/house/other/15.jpg',  caption: '' },
-        { src: 'static/images/house/other/16.jpg', caption: '' },
-        { src: 'static/images/house/other/17.jpg', caption: '' },
-        { src: 'static/images/house/other/18.jpg', caption: '' },
-        { src: 'static/images/house/other/19.jpg', caption: '' },
-        { src: 'static/images/house/other/20.jpg',  caption: '' },
-        { src: 'static/images/house/other/21.jpg',  caption: '' },
-        { src: 'static/images/house/other/22.jpg',  caption: '' },
-      ],
-    },
-    olivo: {
-      label: 'Olivo',
-      images: [
-        { src: 'static/images/house/olivo/1.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/2.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/3.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/4.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/6.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/7.jpg', caption: 'View'    },
-        { src: 'static/images/house/olivo/8.jpg', caption: 'Shower'  },
-        { src: 'static/images/house/olivo/9.jpg', caption: 'Shower'  },
-      ],
-    },
-    melanzana: {
-      label: 'Melanzana',
-      images: [
-        { src: 'static/images/house/melanzana/1.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/melanzana/2.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/melanzana/3.jpg',  caption: 'Bedroom' },
-        { src: 'static/images/house/melanzana/4.jpg',  caption: 'Bedroom' },
-        { src: 'static/images/house/melanzana/5.jpg',  caption: 'Bedroom' },
-        { src: 'static/images/house/melanzana/6.jpg',  caption: 'Toilet'  },
-        { src: 'static/images/house/melanzana/7.jpg',  caption: 'Shower'  },
-      ],
-    },
-    cavolo: {
-      label: 'Cavolo',
-      images: [
-        { src: 'static/images/house/cavolo/1.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/cavolo/2.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/cavolo/3.jpg', caption: 'Bedroom' },
-        { src: 'static/images/house/cavolo/4.jpg', caption: 'Bedroom'  },
-        { src: 'static/images/house/cavolo/5.jpg', caption: 'View'  },
-        { src: 'static/images/house/cavolo/6.jpg', caption: 'Shower'  },
-        { src: 'static/images/house/cavolo/7.jpg', caption: 'Toilet'  },
-        { src: 'static/images/house/cavolo/8.jpg', caption: 'Shower'  },
-      ],
-    },
-  };
+    const SECTIONS = {
+        property: {
+            label: 'Property',
+            images: [
+                { src: 'static/images/house/other/0.jpeg', caption: '' },
+                { src: 'static/images/house/other/2.jpg', caption: '' },
+                { src: 'static/images/house/other/1.jpg', caption: '' },
+                { src: 'static/images/house/other/3.jpg', caption: '' },
+                { src: 'static/images/house/other/4.jpg', caption: '' },
+                { src: 'static/images/house/other/4_2.jpg', caption: '' },
+                { src: 'static/images/house/other/4_3.jpg', caption: '' },
+                { src: 'static/images/house/other/4_4.jpg', caption: '' },
+                { src: 'static/images/house/other/4_5.jpg', caption: '' },
+                { src: 'static/images/house/other/4_6.jpg', caption: '' },
+                { src: 'static/images/house/other/4_7.jpg', caption: '' },
+                { src: 'static/images/house/other/5.jpg', caption: '' },
+                { src: 'static/images/house/other/6.jpg', caption: '' },
+                { src: 'static/images/house/other/7.jpg', caption: '' },
+                { src: 'static/images/house/other/8.jpg', caption: '' },
+                { src: 'static/images/house/other/9.jpg', caption: '' },
+                { src: 'static/images/house/other/10_1.jpg', caption: '' },
+                { src: 'static/images/house/other/10_2.jpg', caption: '' },
+                { src: 'static/images/house/other/11.jpg', caption: '' },
+                { src: 'static/images/house/other/12.jpg', caption: '' },
+                { src: 'static/images/house/other/13.jpg', caption: '' },
+                { src: 'static/images/house/other/14.jpg', caption: '' },
+                { src: 'static/images/house/other/15.jpg', caption: '' },
+                { src: 'static/images/house/other/16.jpg', caption: '' },
+                { src: 'static/images/house/other/17.jpg', caption: '' },
+                { src: 'static/images/house/other/18.jpg', caption: '' },
+                { src: 'static/images/house/other/19.jpg', caption: '' },
+                { src: 'static/images/house/other/20.jpg', caption: '' },
+                { src: 'static/images/house/other/21.jpg', caption: '' },
+                { src: 'static/images/house/other/22.jpg', caption: '' },
+            ],
+        },
+        olivo: {
+            label: 'Olivo',
+            images: [
+                { src: 'static/images/house/olivo/1.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/olivo/2.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/olivo/3.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/olivo/4.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/olivo/6.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/olivo/7.jpg', caption: 'View' },
+                { src: 'static/images/house/olivo/8.jpg', caption: 'Shower' },
+                { src: 'static/images/house/olivo/9.jpg', caption: 'Shower' },
+            ],
+        },
+        melanzana: {
+            label: 'Melanzana',
+            images: [
+                { src: 'static/images/house/melanzana/1.jpeg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/2.jpeg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/3.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/4.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/5.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/6.jpg', caption: 'Toilet' },
+                { src: 'static/images/house/melanzana/7.jpg', caption: 'Shower' },
+            ],
+        },
+        cavolo: {
+            label: 'Cavolo',
+            images: [
+                { src: 'static/images/house/cavolo/1.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/cavolo/2.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/cavolo/3.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/cavolo/4.jpg', caption: 'Bedroom' },
+                { src: 'static/images/house/cavolo/5.jpg', caption: 'View' },
+                { src: 'static/images/house/cavolo/6.jpg', caption: 'Shower' },
+                { src: 'static/images/house/cavolo/7.jpg', caption: 'Toilet' },
+                { src: 'static/images/house/cavolo/8.jpg', caption: 'Shower' },
+            ],
+        },
+    };
 
-  let lbImages = [];
-  let lbIndex = 0;
-  let lbSection = '';
+    let lbImages = [];
+    let lbIndex = 0;
+    let lbSection = '';
 
-  const toThumb = (src) => src.replace(/(\.\w+)$/, '_small$1');
+    const toThumb = (src) => src.replace(/(\.\w+)$/, '_small$1');
 
-  const CSS = `
+    const CSS = `
   .cm-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
@@ -142,86 +142,95 @@
   .next { right: 20px; }
   `;
 
-  const style = document.createElement('style');
-  style.textContent = CSS;
-  document.head.appendChild(style);
+    const style = document.createElement('style');
+    style.textContent = CSS;
+    document.head.appendChild(style);
 
-  const lb = document.createElement('div');
-  lb.className = 'cm-lightbox';
-  lb.innerHTML = `
+    const lb = document.createElement('div');
+    lb.className = 'cm-lightbox';
+    lb.innerHTML = `
     <button class="cm-lb-nav prev" id="prev">&#8249;</button>
     <img class="cm-lb-img" id="img">
     <button class="cm-lb-nav next" id="next">&#8250;</button>
   `;
-  document.body.appendChild(lb);
+    document.body.appendChild(lb);
 
-  const imgEl = document.getElementById('img');
+    const imgEl = document.getElementById('img');
 
-  function open(section, i) {
-    lbSection = section;
-    lbImages = SECTIONS[section].images;
-    lbIndex = i;
-    lb.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    render();
-  }
+    function open(section, i) {
+        lbSection = section;
+        lbImages = SECTIONS[section].images;
+        lbIndex = i;
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        render();
+    }
 
-  function close() {
-    lb.classList.remove('open');
-    document.body.style.overflow = '';
-  }
+    function close() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+    }
 
-  function render() {
-    const entry = lbImages[lbIndex];
-    imgEl.src = entry.src;
-  }
+    function render() {
+        const entry = lbImages[lbIndex];
 
-  function next() {
-    lbIndex = (lbIndex + 1) % lbImages.length;
-    render();
-  }
+        imgEl.style.opacity = '0'; // hide while switching
 
-  function prev() {
-    lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
-    render();
-  }
+        const temp = new Image();
+        temp.src = entry.src;
 
-  document.getElementById('next').onclick = next;
-  document.getElementById('prev').onclick = prev;
-  lb.onclick = (e) => { if (e.target === lb) close(); };
+        temp.onload = () => {
+            imgEl.src = entry.src;
+            imgEl.style.opacity = '1';
+        };
+    }
 
-  document.addEventListener('keydown', (e) => {
-    if (!lb.classList.contains('open')) return;
-    if (e.key === 'ArrowRight') next();
-    if (e.key === 'ArrowLeft') prev();
-    if (e.key === 'Escape') close();
-  });
+    function next() {
+        lbIndex = (lbIndex + 1) % lbImages.length;
+        render();
+    }
 
-  function buildGrid(container, key) {
-    const section = SECTIONS[key];
-    const grid = document.createElement('div');
-    grid.className = 'cm-grid';
+    function prev() {
+        lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+        render();
+    }
 
-    section.images.forEach((img, i) => {
-      const thumb = document.createElement('div');
-      thumb.className = 'cm-thumb';
+    document.getElementById('next').onclick = next;
+    document.getElementById('prev').onclick = prev;
+    lb.onclick = (e) => { if (e.target === lb) close(); };
 
-      const t = document.createElement('img');
-      t.src = toThumb(img.src);
-      t.loading = 'lazy';
-
-      thumb.appendChild(t);
-      thumb.onclick = () => open(key, i);
-
-      grid.appendChild(thumb);
+    document.addEventListener('keydown', (e) => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'Escape') close();
     });
 
-    container.appendChild(grid);
-  }
+    function buildGrid(container, key) {
+        const section = SECTIONS[key];
+        const grid = document.createElement('div');
+        grid.className = 'cm-grid';
 
-  document.querySelectorAll('.cm-gallery').forEach(el => {
-    const key = el.dataset.section;
-    if (key && SECTIONS[key]) buildGrid(el, key);
-  });
+        section.images.forEach((img, i) => {
+            const thumb = document.createElement('div');
+            thumb.className = 'cm-thumb';
+
+            const t = document.createElement('img');
+            t.src = toThumb(img.src);
+            t.loading = 'lazy';
+
+            thumb.appendChild(t);
+            thumb.onclick = () => open(key, i);
+
+            grid.appendChild(thumb);
+        });
+
+        container.appendChild(grid);
+    }
+
+    document.querySelectorAll('.cm-gallery').forEach(el => {
+        const key = el.dataset.section;
+        if (key && SECTIONS[key]) buildGrid(el, key);
+    });
 
 })();
