@@ -50,12 +50,14 @@
     olivo: {
       label: 'Olivo',
       images: [
-        { src: 'static/images/house/olivo/1.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/2.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/3.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/4.jpeg', caption: 'Bedroom' },
-        { src: 'static/images/house/olivo/6.jpeg', caption: 'Toilet'  },
-        { src: 'static/images/house/olivo/7.jpeg', caption: 'Shower'  },
+        { src: 'static/images/house/olivo/1.jpg', caption: 'Bedroom' },
+        { src: 'static/images/house/olivo/2.jpg', caption: 'Bedroom' },
+        { src: 'static/images/house/olivo/3.jpg', caption: 'Bedroom' },
+        { src: 'static/images/house/olivo/4.jpg', caption: 'Bedroom' },
+        { src: 'static/images/house/olivo/6.jpg', caption: 'Bedroom'  },
+        { src: 'static/images/house/olivo/7.jpg', caption: 'View'  },
+        { src: 'static/images/house/olivo/8.jpg', caption: 'Shower'  },
+        { src: 'static/images/house/olivo/9.jpg', caption: 'Shower'  },
       ],
     },
     melanzana: {
