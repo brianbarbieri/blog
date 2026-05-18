@@ -75,8 +75,8 @@ strong { font-weight: 500; color: var(--charcoal); }
   top: 0; left: 0;
   width: var(--sidebar-w) !important;
   height: 100vh;
-  background: var(--charcoal);
-  color: #fff;
+  background: var(--light-grey);
+  color: var(--charcoal);
   z-index: 100;
   display: flex;
   flex-direction: column;
@@ -93,8 +93,8 @@ strong { font-weight: 500; color: var(--charcoal); }
 #mySidebar .sidebar-logo-wrap img {
   width: 55%;
   height: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+  /* filter: brightness(0) invert(1); */
+  /* opacity: 0.9; */
 }
 
 /* W3 sidebar nav items — override */
@@ -110,7 +110,7 @@ strong { font-weight: 500; color: var(--charcoal); }
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 0.04em;
-  color: rgba(255,255,255,0.75) !important;
+  color: var(--charcoal) !important;
   background: transparent !important;
   border-left: 2px solid transparent;
   transition: all var(--transition);
@@ -438,4 +438,10 @@ div > p[id^="rules"] {
 
 .cm-lb-img {
   transition: opacity 0.2s ease;
+}
+
+.langText {
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  color: var(--charcoal);
 }
