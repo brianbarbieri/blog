@@ -1,15 +1,16 @@
 from PIL import Image
 import os
 
-folder = "./other"
-MAX_WIDTH = 150
+folder = "static/images/house/olivo"
+MAX_WIDTH = 1200
 
 for filename in os.listdir(folder):
     if filename.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".bmp", ".gif")):
         input_path = os.path.join(folder, filename)
-
+        if "_small" in filename or "_med" in filename:
+            continue
         name, ext = os.path.splitext(filename)
-        output_path = os.path.join(folder, f"{name}_small{ext}")
+        output_path = os.path.join(folder, f"{name}_med{ext}")
 
         with Image.open(input_path) as img:
             width, height = img.size

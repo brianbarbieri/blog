@@ -82,6 +82,7 @@
     let lbSection = '';
 
     const toThumb = (src) => src.replace(/(\.\w+)$/, '_small$1');
+    const toImg = (src) => src.replace(/(\.\w+)$/, '_med$1');
 
     const CSS = `
   .cm-grid {
@@ -177,10 +178,10 @@
         imgEl.style.opacity = '0'; // hide while switching
 
         const temp = new Image();
-        temp.src = entry.src;
+        temp.src = toImg(entry.src);
 
         temp.onload = () => {
-            imgEl.src = entry.src;
+            imgEl.src = toImg(entry.src);
             imgEl.style.opacity = '1';
         };
     }
@@ -276,8 +277,8 @@
 
                 imagesToLoad.forEach(img => {
                     const pre = new Image();
-                    pre.src = img.src;
-                    loaded.add(img.src);
+                    pre.src = toImg(img.src); // load medium size first
+                    loaded.add(toImg(img.src));
                 });
             });
         }, {
