@@ -318,18 +318,6 @@
     <script src="static/response.js"></script>
     <script src="static/translate.js"></script>
     <script src="static/gallery.js"></script>
-    <script>
-        function preloadFullImages() {
-            Object.values(SECTIONS).forEach(section => {
-                section.images.forEach(img => {
-                    const pre = new Image();
-                    pre.src = img.src; // full size
-                });
-            });
-        }
-
-        preloadFullImages();
-    </script>
 </body>
 
 </html>

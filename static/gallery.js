@@ -233,4 +233,15 @@
         if (key && SECTIONS[key]) buildGrid(el, key);
     });
 
+    function preloadFullImages() {
+        Object.values(SECTIONS).forEach(section => {
+            section.images.forEach(img => {
+                const pre = new Image();
+                pre.src = img.src; // full size
+            });
+        });
+    }
+
+    preloadFullImages();
+
 })();
