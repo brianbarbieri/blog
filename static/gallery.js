@@ -233,15 +233,62 @@
         if (key && SECTIONS[key]) buildGrid(el, key);
     });
 
-    function preloadFullImages() {
-        Object.values(SECTIONS).forEach(section => {
-            section.images.forEach(img => {
-                const pre = new Image();
-                pre.src = img.src; // full size
+    // function preloadFullImages(batchSize = 8, delay = 2000) {
+    //     const allImages = Object.values(SECTIONS).flatMap(section => section.images);
+
+    //     let index = 0;
+
+    //     function loadBatch() {
+    //         const batch = allImages.slice(index, index + batchSize);
+
+    //         batch.forEach(img => {
+    //             const pre = new Image();
+    //             pre.src = img.src;
+    //         });
+
+    //         index += batchSize;
+
+    //         if (index < allImages.length) {
+    //             setTimeout(loadBatch, delay);
+    //         }
+    //     }
+
+    //     loadBatch();
+    // }
+
+    // preloadFullImages(8, 2000);
+
+    function preloadVisibleImages(batchSize = 8) {
+        const loaded = new Set();
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+
+                const sectionKey = entry.target.dataset.section;
+                const section = SECTIONS[sectionKey];
+
+                if (!section) return;
+
+                const imagesToLoad = section.images
+                    .filter(img => !loaded.has(img.src))
+                    .slice(0, batchSize);
+
+                imagesToLoad.forEach(img => {
+                    const pre = new Image();
+                    pre.src = img.src;
+                    loaded.add(img.src);
+                });
             });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll("[data-section]").forEach(el => {
+            observer.observe(el);
         });
     }
 
-    preloadFullImages();
+    preloadVisibleImages(8);
 
 })();
