@@ -139,6 +139,29 @@
     padding: 10px;
   }
 
+  .cm-lb-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .cm-lb-close:hover,
+  .cm-lb-nav:hover {
+    background: rgba(255,255,255,0.25);
+  }
+
   .prev { left: 20px; }
   .next { right: 20px; }
   `;
@@ -150,10 +173,14 @@
     const lb = document.createElement('div');
     lb.className = 'cm-lightbox';
     lb.innerHTML = `
+    <button class="cm-lb-close" id="close">&times;</button>
+
     <button class="cm-lb-nav prev" id="prev">&#8249;</button>
+
     <img class="cm-lb-img" id="img">
+
     <button class="cm-lb-nav next" id="next">&#8250;</button>
-  `;
+    `;
     document.body.appendChild(lb);
 
     const imgEl = document.getElementById('img');
@@ -198,6 +225,7 @@
 
     document.getElementById('next').onclick = next;
     document.getElementById('prev').onclick = prev;
+    document.getElementById('close').onclick = close;
     lb.onclick = (e) => { if (e.target === lb) close(); };
 
     document.addEventListener('keydown', (e) => {
