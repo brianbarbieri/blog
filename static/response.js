@@ -32,8 +32,8 @@ vid.appendChild(source);
 function setVideo() {
     var isMobile = window.matchMedia("(max-width: 700px)").matches;
     var newSrc = isMobile
-        ? "static/images/videos/casa_modero_verticaal.mp4"
-        : "static/images/videos/casa_modero.mp4";
+        ? "static/images/videos/casa_modero_v2.mp4"
+        : "static/images/videos/casa_modero_v2.mp4";
     if (source.getAttribute("src") !== newSrc) {
         vid.pause();
         source.setAttribute("src", newSrc);

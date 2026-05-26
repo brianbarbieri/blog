@@ -5,7 +5,7 @@
         property: {
             label: 'Property',
             images: [
-                { src: 'static/images/house/other/0.jpeg', caption: '' },
+                { src: 'static/images/house/other/0.jpg', caption: '' },
                 { src: 'static/images/house/other/2.jpg', caption: '' },
                 { src: 'static/images/house/other/1.jpg', caption: '' },
                 { src: 'static/images/house/other/3.jpg', caption: '' },
