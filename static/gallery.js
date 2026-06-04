@@ -55,11 +55,9 @@
             images: [
                 { src: 'static/images/house/melanzana/1.jpeg', caption: 'Bedroom' },
                 { src: 'static/images/house/melanzana/2.jpeg', caption: 'Bedroom' },
-                { src: 'static/images/house/melanzana/3.jpg', caption: 'Bedroom' },
-                { src: 'static/images/house/melanzana/4.jpg', caption: 'Bedroom' },
-                { src: 'static/images/house/melanzana/5.jpg', caption: 'Bedroom' },
-                { src: 'static/images/house/melanzana/6.jpg', caption: 'Toilet' },
-                { src: 'static/images/house/melanzana/7.jpg', caption: 'Shower' },
+                { src: 'static/images/house/melanzana/3.jpeg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/4.jpeg', caption: 'Bedroom' },
+                { src: 'static/images/house/melanzana/5.jpeg', caption: 'Shower' },
             ],
         },
         cavolo: {

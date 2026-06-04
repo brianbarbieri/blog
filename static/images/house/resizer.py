@@ -1,10 +1,11 @@
 from PIL import Image
 import os
 
-folder = "static/images/house/other"
-# MAX_WIDTH = 1200
-MAX_WIDTH = 120
-NAME = "small"
+folder = "static/images/house/melanzana"
+MAX_WIDTH = 1200
+NAME = "med"
+# MAX_WIDTH = 120
+# NAME = "small"
 
 for filename in os.listdir(folder):
     if filename.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".bmp", ".gif")):
